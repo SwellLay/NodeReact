@@ -1,0 +1,467 @@
+.form-control {
+    display: inline-block;
+    border-color: $border-color;
+    border-radius: $border-radius;
+    // box-shadow: $shadow-inset;
+    margin: 4px 0;
+    min-height: 40px;
+
+    &:focus,
+    &:active {
+        border-color: $primary;
+        border-width: 2px;
+        box-shadow: 0 0 0 4px rgba($primary, .1);
+    }
+
+}
+
+.form-control-center {
+    .form-control {
+        border-radius: $border-radius;
+    }
+}
+
+
+*:disabled,
+[class*=is-disabled],
+[class*=is-disabled] .input-group-text,
+[class*=is-disabled] .Select-control,
+.react-datepicker-wrapper .react-datepicker__input-container .form-control:disabled {
+  cursor: not-allowed !important;
+  background: $gray;
+  border-color: darken($gray, 10%);
+  color: darken($gray, 15%) !important;
+}
+
+[class*="is-disabled"] .input-group-text {
+    background: darken($gray, 5%) !important;
+    color: darken($gray, 15%) !important;
+}
+
+[class*="is-disabled"] .Select-control .Select-value .Select-value-label {
+    color: darken($gray, 15%) !important;
+}
+
+
+// @TODO: Maybe find ` better background image to emulate arrows
+select.form-control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEuNDEgNC42NyAyLjQ4IDMuMTggMy41NCA0LjY3IDEuNDEgNC42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzLjU0IDUuMzMgMi40OCA2LjgyIDEuNDEgNS4zMyAzLjU0IDUuMzMiLz48L3N2Zz4=) no-repeat 95% 50%;
+}
+
+// .py-form__element__small.err, .py-form__element__xsmall.err{
+//     input{
+//         background-repeat: no-repeat;
+//         background-position: center right calc(0.375em + 0.1875rem);
+//         background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+//         border-color: red;
+//         padding-right: calc(1.5em + 0.75rem);
+//         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fc605a' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23fc605a' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+//     }
+// }
+
+
+.input-group {
+    .input-group-text {
+        border: 1px solid $border-color;
+    }
+}
+
+
+// start:: alex
+// Component:: Form fields
+
+.py-checkbox,
+.py-radio,
+.form-control {
+
+    [type="checkbox"]:focus,
+    [type="checkbox"]:active,
+    [type="radio"]:focus,
+    [type="radio"]:active,
+    [type="text"]:focus,
+    [type="text"]:active,
+    input:active,
+    input:focus {
+        ~.py-form__element__faux {
+            border-color: $primary;
+            box-shadow: 0 0 0 3px rgba($primary, 0.2);
+        }
+    }
+
+    &:disabled {
+        background: #f1f3f3;
+        border-color: #f1f3f3;
+
+        &:focus,
+        &:active {
+            border: 0 !important;
+            box-shadow: none !important;
+        }
+    }
+
+    [type="checkbox"]:disabled,
+    [type="checkbox"]:disabled,
+    [type="radio"]:disabled,
+    [type="radio"]:disabled {
+        ~.py-form__element__faux {
+            background: $gray-200;
+            box-shadow: none;
+            border: 0;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: 0;
+            box-shadow: none;
+
+            ~.py-form__element__faux {
+                border: 0;
+                box-shadow: none;
+            }
+        }
+    }
+
+}
+
+
+
+.py-form-field {
+    margin-bottom: 1rem;
+
+    .py-text--emphasized {
+        color: $text-muted;
+        font-style: italic;
+    }
+}
+
+.py-form-field__blank {
+    display: none;
+}
+
+.py-form-field__label,
+.py-form-field__label--align-top {
+    position: relative;
+
+    &.is-required {
+
+        padding-right: 20px !important;
+
+        &:after {
+            content: '*';
+            color: $danger;
+            font-size: 13px;
+            position: absolute;
+            margin-left: 1px;
+            vertical-align: bottom;
+            font-size: 1.2rem;
+        }
+
+    }
+}
+
+
+[contenteditable="true"] {
+    @extend .form-control;
+    min-height: 200px;
+}
+// Form inline
+.py-form-field--inline {
+    display: flex;
+    align-items: start;
+
+    .py-form-field__label,
+    .py-form-field__label--align-top {
+        width: 35%;
+        padding: 10px 14px 10px 0;
+        text-align: right;
+        position: relative;
+    }
+
+    .py-form-field__element {
+        width: 65%;
+        vertical-align: top;
+        margin-left: auto;
+        text-align: left;
+        margin-top: 4px;
+        margin-bottom: 4px;
+
+        .Select {
+            min-height: 40px;
+            min-width: 160px;
+            max-width: 320px;
+        }
+    }
+
+
+    .py-form-field__label--align-top {
+        padding-top: 0;
+    }
+}
+
+.py-form--horizontal {
+    .py-form-field {
+        margin-bottom: 8px;
+    }
+}
+
+
+.py-form--vertical {
+
+    .py-form-field {
+        margin-bottom: 8px;
+    }
+
+    .py-form-field__label {
+        margin-bottom: 4px;
+    }
+
+    .py-form-field__element {
+        max-width: auto;
+    }
+}
+
+
+.py-form__element__small {
+    max-width: 160px !important;
+}
+
+.py-form__element__xmedium {
+    max-width: 140px;
+}
+
+.py-form__element__xsmall {
+    max-width: 90px !important;
+}
+
+.py-form__element__medium {
+    max-width: 320px !important;
+}
+
+.py-form__element__large {
+    max-width: 420px !important;
+}
+
+.py-input--large {
+    padding: 12px 16px;
+    line-height: 1.4;
+    font-size: 20px;
+    max-width: 480px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 23px;
+    }
+}
+
+.py-textarea {
+    min-width: 160px;
+}
+
+.py-textarea__medium {
+    max-width: 320px;
+}
+
+.py-form-fieldset {
+    margin-bottom: 24px
+}
+
+.py-form-field__hint,
+.py-text--hint {
+    display: block;
+    font-size: 14px;
+    color: rgba($black, .6);
+
+    &.py-text__emphasized {
+        display: inline-block;
+    }
+}
+
+
+.py-form__element__color {
+    width: 22px;
+    height: 28px;
+    padding: 0;
+    background-image: url('/assets/icons/trigger.png') center no-repeat;
+    display: inline-block;
+    outline: none;
+    border: 0;
+    margin: 0 .25em;
+}
+
+.py-form__element__fluid {
+    width: 100%;
+    min-width: 100%;
+    display: block;
+
+    &.py-select--native {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+// Hide the default inputs in checkbox and radios
+.py-radio,
+.py-checkbox,
+.py-switch,
+.py-uploader {
+    display: inline-flex;
+    align-items: center;
+    // cursor: pointer;
+    margin: 4px 0;
+
+    [type="checkbox"],
+    [type="radio"],
+    [type="file"] {
+        width: 1px;
+        height: 1px;
+        border: 0;
+        clip: rect(0 0 0 0);
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+
+        &:disabled {
+            cursor: not-allowed;
+
+            +.py-form__element__faux {
+                cursor: not-allowed;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            ~.py-form__element__label {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+
+
+    +.py-form-field__hint {
+        margin-left: 29px;
+        margin-bottom: 8px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.py-form-legend {
+    padding: 0;
+    text-align: left;
+    color: $body-color;
+}
+
+.py-form__element__faux {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    display: inline-block;
+    position: relative;
+    border: $input-border-width solid $border-color;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.py-form__element__label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.py-radio,
+.py-checkbox {
+
+    .py-form__element__faux {
+        position: relative;
+
+        &:before {
+            content: '';
+            transform: scale(0);
+            transition: transform .2s ease-in-out;
+            transform-origin: center;
+        }
+    }
+
+    &:hover {
+        .py-form__element__faux {
+            border-color: $primary;
+
+            &:before {
+                width: 34px;
+                height: 34px;
+                background: rgba($primary, .2);
+                border-radius: 500px;
+                transform: scale(1);
+                position: absolute;
+                top: -8px;
+                left: -8px;
+            }
+        }
+    }
+}
+
+
+.input-group {
+
+}
+.py-input-group {
+    display: flex;
+    align-items: center;
+
+    .form-control {
+        &:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+
+
+.py-form-field--condensed {
+    .py-form-field,
+    .form-group {
+        margin-bottom: 8px;
+
+        .py-form-field__element {
+            margin: 0;
+        }
+    }
+}
+
+.form-group {
+    .py-form-field__label {
+        margin-bottom: 4px;
+        display: inline-block;
+    }
+}
+
+.py-uploader {
+    border: 1px dashed $primary;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 4px;
+
+    .py-upload__cloud-logo {
+        width: 60px;
+        height: 60px;
+    }
+}

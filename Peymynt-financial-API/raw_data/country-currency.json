@@ -1,0 +1,402 @@
+[
+  {
+    "id": 13,
+    "sortname": "AU",
+    "name": "Australia",
+    "phoneCode": 61,
+    "alpha3Code": "AUS",
+    "alpha2Code": "AU",
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$",
+        "displayName": "AUD ($) Australian dollar"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "sortname": "AT",
+    "name": "Austria",
+    "phoneCode": 43,
+    "alpha3Code": "AUT",
+    "alpha2Code": "AT",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "sortname": "BE",
+    "name": "Belgium",
+    "phoneCode": 32,
+    "alpha3Code": "BEL",
+    "alpha2Code": "BE",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "sortname": "BR",
+    "name": "Brazil",
+    "phoneCode": 55,
+    "alpha3Code": "BRA",
+    "alpha2Code": "BR",
+    "currencies": [
+      {
+        "code": "BRL",
+        "name": "Brazilian real",
+        "symbol": "R$",
+        "displayName": "BRL (R$) Brazilian real"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "sortname": "CA",
+    "name": "Canada",
+    "phoneCode": 1,
+    "alpha3Code": "CAN",
+    "alpha2Code": "CA",
+    "currencies": [
+      {
+        "code": "CAD",
+        "name": "Canadian dollar",
+        "symbol": "$",
+        "displayName": "CAD ($) Canadian dollar"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "sortname": "DK",
+    "name": "Denmark",
+    "phoneCode": 45,
+    "alpha3Code": "DNK",
+    "alpha2Code": "DK",
+    "currencies": [
+      {
+        "code": "DKK",
+        "name": "Danish krone",
+        "symbol": "kr",
+        "displayName": "DKK (kr) Danish krone"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "sortname": "FI",
+    "name": "Finland",
+    "phoneCode": 358,
+    "alpha3Code": "FIN",
+    "alpha2Code": "FI",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "sortname": "FR",
+    "name": "France",
+    "phoneCode": 33,
+    "alpha3Code": "FRA",
+    "alpha2Code": "FR",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "sortname": "DE",
+    "name": "Germany",
+    "phoneCode": 49,
+    "alpha3Code": "DEU",
+    "alpha2Code": "DE",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "sortname": "HK",
+    "name": "Hong Kong",
+    "phoneCode": 852,
+    "alpha3Code": "HKG",
+    "alpha2Code": "HK",
+    "currencies": [
+      {
+        "code": "HKD",
+        "name": "Hong Kong dollar",
+        "symbol": "$",
+        "displayName": "HKD ($) Hong Kong dollar"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "sortname": "IN",
+    "name": "India",
+    "phoneCode": 91,
+    "alpha3Code": "IND",
+    "alpha2Code": "IN",
+    "currencies": [
+      {
+        "code": "INR",
+        "name": "Indian rupee",
+        "symbol": "₹",
+        "displayName": "INR (₹) Indian rupee"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "sortname": "IE",
+    "name": "Ireland",
+    "phoneCode": 353,
+    "alpha3Code": "IRL",
+    "alpha2Code": "IE",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "sortname": "IT",
+    "name": "Italy",
+    "phoneCode": 39,
+    "alpha3Code": "ITA",
+    "alpha2Code": "IT",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "sortname": "JP",
+    "name": "Japan",
+    "phoneCode": 81,
+    "alpha3Code": "JPN",
+    "alpha2Code": "JP",
+    "currencies": [
+      {
+        "code": "JPY",
+        "name": "Japanese yen",
+        "symbol": "¥",
+        "displayName": "JPY (¥) Japanese yen"
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "sortname": "LU",
+    "name": "Luxembourg",
+    "phoneCode": 352,
+    "alpha3Code": "LUX",
+    "alpha2Code": "LU",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "sortname": "MX",
+    "name": "Mexico",
+    "phoneCode": 52,
+    "alpha3Code": "MEX",
+    "alpha2Code": "MX",
+    "currencies": [
+      {
+        "code": "MXN",
+        "name": "Mexican peso",
+        "symbol": "$",
+        "displayName": "MXN ($) Mexican peso"
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "sortname": "NL",
+    "name": "Netherlands",
+    "phoneCode": 31,
+    "alpha3Code": "NLD",
+    "alpha2Code": "NL",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "sortname": "NZ",
+    "name": "New Zealand",
+    "phoneCode": 64,
+    "alpha3Code": "NZL",
+    "alpha2Code": "NZ",
+    "currencies": [
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$",
+        "displayName": "NZD ($) New Zealand dollar"
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "sortname": "NO",
+    "name": "Norway",
+    "phoneCode": 47,
+    "alpha3Code": "NOR",
+    "alpha2Code": "NO",
+    "currencies": [
+      {
+        "code": "NOK",
+        "name": "Norwegian krone",
+        "symbol": "kr",
+        "displayName": "NOK (kr) Norwegian krone"
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "sortname": "PT",
+    "name": "Portugal",
+    "phoneCode": 351,
+    "alpha3Code": "PRT",
+    "alpha2Code": "PT",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "sortname": "ES",
+    "name": "Spain",
+    "phoneCode": 34,
+    "alpha3Code": "ESP",
+    "alpha2Code": "ES",
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "displayName": "EUR (€) Euro"
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "sortname": "SE",
+    "name": "Sweden",
+    "phoneCode": 46,
+    "alpha3Code": "SWE",
+    "alpha2Code": "SE",
+    "currencies": [
+      {
+        "code": "SEK",
+        "name": "Swedish krona",
+        "symbol": "kr",
+        "displayName": "SEK (kr) Swedish krona"
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "sortname": "CH",
+    "name": "Switzerland",
+    "phoneCode": 41,
+    "alpha3Code": "CHE",
+    "alpha2Code": "CH",
+    "currencies": [
+      {
+        "code": "CHF",
+        "name": "Swiss franc",
+        "symbol": "Fr",
+        "displayName": "CHF (Fr) Swiss franc"
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "sortname": "GB",
+    "name": "United Kingdom",
+    "phoneCode": 44,
+    "alpha3Code": "GBR",
+    "alpha2Code": "GB",
+    "currencies": [
+      {
+        "code": "GBP",
+        "name": "British pound",
+        "symbol": "£",
+        "displayName": "GBP (£) British pound"
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "sortname": "US",
+    "name": "United States",
+    "phoneCode": 1,
+    "alpha3Code": "USA",
+    "alpha2Code": "US",
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "U.S. dollar",
+        "symbol": "$",
+        "displayName": "USD ($) U.S. dollar"
+      }
+    ]
+  }
+]

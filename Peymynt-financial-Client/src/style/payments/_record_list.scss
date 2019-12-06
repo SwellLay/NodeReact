@@ -1,0 +1,148 @@
+.payments-list {
+
+
+  thead {
+    .py-table__cell {
+      padding-top: 20px;
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+
+    .py-table__cell-amount {
+      text-align: right !important;
+    }
+  }
+
+
+  table {
+    .py-table__cell {
+      width: auto;
+      vertical-align: middle;
+    }
+  }
+}
+
+.payment-list__item-container {
+  box-shadow: 0 .4rem .4rem rgba($black, .2);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.payments-list__item--body {
+  display: flex;
+  align-items: center;
+
+  .payment-list__item-amount {
+    flex-grow: 1;
+    margin-right: 2rem;
+
+    > div {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      color: rgba($black, .8);
+
+      &:last-child {
+        color: $black;
+        border-top: 2px solid $black;
+      }
+    }
+  }
+
+    
+  .payment-cards__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    flex-grow: 1;
+    position: relative;
+
+    .py-text--hint {
+      margin-bottom: .5rem;
+    }
+
+    .py-payment-card {
+      color: $white;
+    }
+  }
+
+  .payment-cards__indicator  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.payment-list__footer {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+
+  .btn:last-child {
+    margin-left: 1rem;
+  }
+}
+
+.py-payment__bank {
+  display: flex;
+  align-items: center;
+}
+.py-payment__bank-icon {
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  min-height: 56px;
+  background: rgba(255, 255, 255, .2);
+  text-align: center;
+  line-height: 56px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+.py-payment__bank-name {
+  word-break: break-word;
+  white-space: pre-wrap;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.py-payment__bank__link {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1rem;
+  
+  .py-text--link {
+    font-size: 12px;
+    color: rgba($white, .8) !important;
+    text-decoration: underline;
+
+    &:hover {
+      color: $white !important;
+    }
+  }
+}
+
+
+.Refund-Modal__body {
+  padding: 48px 72px;
+  .refund-modal__amount {
+    margin-right: 4px;
+    .form-control:disabled {
+      background: none;
+      // border: 0;
+      width: auto;
+      min-width: 0;
+      display: inline-block;
+    }
+  }
+
+}
+
+
+.rbt-menu.show {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

@@ -1,0 +1,29 @@
+.content-wrapper__small {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.public-payment-footer-links {
+  padding: 0;
+  margin:8px 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 8px;
+      &:after {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: $border-color;
+        border-radius: 50rem;
+        display: inline-block;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

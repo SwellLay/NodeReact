@@ -1,0 +1,75 @@
+.py-switch {
+  display: block;
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+
+
+  [type="checkbox"] {
+
+    +.py-toggle__handle {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      width: 48px;
+      height: 20px;
+      border-radius: 1000px;
+      background: $gray-700;
+      transition: all 240ms;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      line-height: 16px;
+
+      &:before,
+      &:after {
+        position: relative;
+        top: 0;
+        font-size: 11px;
+        display: inline-block;
+        color: white;
+        font-weight: $font-weight-bold;
+      }
+
+      &:before {
+        content: "ON";
+        text-indent: -22px;
+        width: 16px;
+        height: 16px;
+        margin: 0 0 0 2px;
+        border-radius: inherit;
+        background: #fff;
+      }
+
+      &:after {
+        content: "OFF";
+        text-indent: 3px;
+      }
+    }
+
+    +.py-toggle__label {
+      margin-left: 1rem;
+    }
+
+    &:checked~.py-toggle__handle {
+      padding-left: 28px;
+      background: $primary;
+    }
+  }
+}
+
+.py-toggle__checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.py-toggle__label {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin: 0 .5rem;
+}
+
+.receipts-setting__hint-text {
+  margin: 0 0 0 58px;
+}

@@ -1,0 +1,44 @@
+.custom-checkbox {
+  padding-left: 2rem;
+  line-height: 1.8;
+  min-height: 2rem;
+
+  .custom-control-label::before,
+  .custom-control-label::after {
+    width: 18px;
+    height: 18px;
+    left: -2rem;
+  }
+}
+
+.py-checkbox {
+  cursor: pointer;
+
+  .py-form__element__faux {
+    border-radius: 4px;
+  }
+
+  .py-form__element__label {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  input:checked ~ .py-form__element__faux,
+  input:checked + .py-form__element__faux {
+    background: $primary;
+    border-color: $primary;
+
+    &:after {
+      display: block;
+      content: "";
+      height: 5px;
+      width: 10px;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+      border-bottom: 2px solid white;
+      border-left: 2px solid white;
+    }
+  }
+}

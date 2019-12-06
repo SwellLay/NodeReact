@@ -1,0 +1,15 @@
+.payments-filter-container {
+  display: flex;
+  align-items: center;
+
+  .payments-filter__search{
+    flex-grow: 1;
+    margin-right: 2rem;
+  }
+
+  .input-group {
+    .form-control {
+      margin: 0;
+    }
+  }
+}

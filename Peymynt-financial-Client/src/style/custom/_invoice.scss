@@ -1,0 +1,692 @@
+.invoice-header {
+  margin-bottom: 15px;
+
+  .py-header--page {
+    margin: 0;
+  }
+}
+
+.invoiceWrapper {
+  .editableDiv {
+    border: none;
+    content: "Input";
+    font-size: 16px;
+    min-height: 100px;
+    max-height: 100px;
+    padding-top: 2px;
+    overflow: scroll;
+  }
+
+  .editableDiv:empty:before {
+    content: "Enter notes that are visible to your customer";
+    font-style: italic !important;
+    color: #b2c2cd !important;
+    font-size: 16px !important;
+  }
+}
+
+.invoice-insights__content {
+  .invoice-insights__content-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .invoice-insights-content__column {
+    max-width: calc(100% / 3);
+    width: 100%;
+    overflow: hidden;
+    word-break: break-word;
+
+    .py-text--block-label {
+      color: #687578;
+      display: inline-block;
+      font-size: 14px;
+      margin: 3px 0;
+      font-weight: $font-weight-bold;
+    }
+
+    .py-text--large {
+      margin: 0;
+    }
+
+    .py-text--small {
+      color: #849194;
+    }
+
+    .invoice-insights-content__column-value {
+      font-size: 24px;
+      margin-right: 3px;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .bottom-row {
+    margin-top: 10px;
+
+    .py-text--hint {
+      margin: 0;
+    }
+
+    .icon {
+      svg {
+        fill: #4d6575;
+      }
+    }
+  }
+}
+
+.invoice-list-table-filters-container {
+  display: flex;
+  align-items: center;
+
+  .form-control {
+    margin: 0;
+  }
+
+  .invoice-filter--customer {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+
+  .invoice-filter--status {
+    margin-right: 15px;
+
+    .Select {
+      min-width: 160px;
+    }
+  }
+
+  .Select-control,
+  .Select-input {
+    height: 40px;
+  }
+
+  .Select-placeholder,
+  .Select-value {
+    width: auto !important;
+    height: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    bottom: initial !important;
+    line-height: 1 !important;
+  }
+
+  .invoice-filter--date {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .invoice-filter--date {
+    margin-right: 15px;
+  }
+
+  .invoice-filter--search {
+    .input-group-append {
+      .btn {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+}
+
+.payoutn {
+  margin-left: 20px;
+  border: 0px;
+
+  .nav-link {
+    font-size: 19px !important;
+    margin-right: 7px;
+    width: 48%;
+    background: #edf2f7;
+    border: 1px solid #d8d8d8 !important;
+    padding: 10px 0 10px 100px;
+    border-radius: 0px;
+
+    .badge {
+      margin-left: 4px !important;
+    }
+  }
+
+  // .nav-link:hover{
+  //     border: 1px solid #d8d8d8 !important;
+  // }
+
+  .nav-link.active {
+    border-radius: 0px;
+    border: none !important;
+    font-weight: bold !important;
+    border-top: 4px solid #9f55ff !important;
+    border-bottom: none;
+  }
+}
+
+.cardSave-check {
+  label {
+    display: inline;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 24px;
+    color: #4c5357;
+    font-weight: 400;
+  }
+}
+
+.customStripeElement {
+  top: -17px;
+  position: relative;
+  /* height: 44px; */
+  color: black;
+  padding: 0px !important;
+  border-radius: 4px !important;
+
+  input {
+    border: none;
+  }
+
+  .input-group {
+    input {
+      padding-left: 0;
+    }
+  }
+}
+
+.prependAddon-input-card {
+  // position: absolute;
+  left: 16px;
+  top: 6px !important;
+  // height: 30px !important;
+  font-size: 16px;
+
+  +.form-control {
+    margin: 0;
+  }
+
+  span {
+    background-color: #fff;
+    // border: none;
+    border-radius: 4px;
+    width: 40px;
+    justify-content: center;
+    font-size: 16px !important;
+    padding: 0;
+  }
+
+  .input-group-text {
+    color: #b2c2cd;
+  }
+}
+
+
+.prependAddon-input-card.disabled {
+  left: 16px;
+  top: 6px !important;
+
+  span {
+    background-color: #e9ecef;
+    // border: none;
+    border-radius: 4px;
+    width: 40px;
+    justify-content: center;
+    font-size: 16px !important;
+    padding: 0;
+  }
+
+  .input-group-text {
+    color: #41494f;
+  }
+}
+
+// .invoice-list-table-filters-container {
+//     .Select-control {
+//         height: 38px !important;
+//     }
+
+//     .date-frm {
+//         .form-control {
+//             border-top-right-radius: 0px !important;
+//             border-bottom-right-radius: 0px !important;
+//             // border-right: none !important;
+//         }
+//     }
+
+//     .date-to {
+//         .form-control {
+//             border-top-left-radius: 0px !important;
+//             border-bottom-left-radius: 0px !important;
+//         }
+//     }
+// }
+
+.group-input {
+  position: relative;
+  margin-bottom: 15px;
+
+  a {
+    position: absolute;
+    right: -17px;
+    top: 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: #9f55ff !important;
+    }
+  }
+}
+
+.custom-textarea {
+  height: 170px !important;
+}
+
+.send-invoice-email__provider {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0;
+
+  .send-invoice-email__provider__link {
+    display: block;
+
+    .send-invoice-email__provider__logo {
+      height: 60px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 30px;
+    }
+  }
+
+  .send-invoice-email__provider__forward-icon {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    line-height: 60px;
+    font-size: 30px;
+  }
+}
+
+.send-invoice-email__divider {
+  display: block;
+  height: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #d4dde3;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.tabfooter {
+  border-top: 1px solid #dee2e6;
+  padding-top: 15px;
+  /*  margin: 0 -36px; */
+  padding-right: 15px;
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  button {
+    margin-left: 5px;
+  }
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.invoice-list-table {
+  .py-table--condensed {
+    .badge {
+      min-width: 100px;
+    }
+
+    .py-table__cell__action {
+      text-align: right;
+    }
+
+    tbody {
+      .py-table__row {
+        cursor: pointer;
+        border-bottom: 1px solid #c6d3d7 !important;
+        position: relative;
+
+        &:last-child {
+          border: 0;
+        }
+
+        .py-table__cell__action,
+        .py-table__cell-amount,
+        .py-table__cell {
+          vertical-align: middle;
+        }
+
+        .dropdown {
+          margin: 0 8px;
+        }
+
+        .py-table__cell__action {
+          &:last-child {
+            .py-table__actions-cell-content {
+              white-space: nowrap;
+            }
+          }
+        }
+
+        &:hover {
+          border-bottom: 1px solid #c6d3d7 !important;
+        }
+      }
+    }
+  }
+
+  .py-table__cell-action,
+  .py-table__cell-content {
+    .py-text--link {
+      margin: 0;
+    }
+  }
+
+  .py-table__cell-action {
+    justify-content: flex-end;
+
+    .py-text--link {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &.tab-unpaid {
+    .py-table--condensed {
+      thead {
+        tr {
+          th {
+            &:first-child {
+              width: 78px;
+            }
+
+            &:nth-child(2) {
+              min-width: 138px;
+            }
+
+            &:nth-child(3) {
+              min-width: 94px;
+            }
+
+            &:nth-child(4) {
+              min-width: 82px;
+            }
+
+            &:nth-child(5) {
+              min-width: 176px;
+            }
+
+            &:nth-child(6) {
+              width: 125px;
+              text-align: right;
+            }
+
+            &:last-child {
+              min-width: 164px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.tab-draft {
+    .py-table--condensed {
+      thead {
+        tr {
+          th {
+            &:first-child {
+              width: 78px;
+            }
+
+            &:nth-child(2) {
+              min-width: 94px;
+            }
+
+            &:nth-child(3) {
+              min-width: 82px;
+            }
+
+            &:nth-child(5) {
+              min-width: 125px;
+              text-align: right;
+            }
+
+            &:last-child {
+              min-width: 164px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.tab-all {
+    .py-table--condensed {
+      thead {
+        tr {
+          th {
+            &:first-child {
+              width: 78px;
+            }
+
+            &:nth-child(2) {
+              min-width: 94px;
+            }
+
+            &:nth-child(3) {
+              min-width: 82px;
+            }
+
+            &:nth-child(5),
+            &:nth-child(6) {
+              min-width: 125px;
+              text-align: right;
+            }
+
+            &:last-child {
+              min-width: 164px;
+            }
+          }
+        }
+      }
+
+      tbody {
+        .py-table__row {
+          border-bottom: 1px solid #c6d3d7;
+
+          .py-table__cell {
+            &:nth-child(5) {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// invoice view
+.invoice-view-header {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.send-with-py {
+  // padding: 20px 32px;
+
+  .py-form-field--inline {
+
+    .py-form-field__label,
+    .py-form-field__blank {
+      width: 30%;
+    }
+
+    .py-form-field__element {
+      width: 70%;
+    }
+  }
+
+  .multirecipient {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 320px 2fr;
+  }
+
+  .multirecipient__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    position: relative;
+    color: $primary;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: rgba($primary, 0.1);
+      position: absolute;
+      transform: scale(0);
+      border-radius: 50rem;
+      transform-origin: center center;
+      transition: transform 0.2s ease-out;
+    }
+
+    &:hover {
+      &:before {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .tabfooter {
+    text-align: right;
+  }
+}
+
+// Invoice List, On hover of date show popover
+
+.popover_wrapper {
+
+  // position: relative;
+  .tooltip {
+    background: #ffffff;
+    bottom: 100%;
+    color: #1c252c;
+    display: block;
+    left: 35%;
+    margin-bottom: 0px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 460px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid rgba(77, 101, 117, 0.07);
+
+    box-shadow: 0 4px 36px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+
+    .customer_details {
+      margin-top: 15px;
+
+      .customer_container {
+        display: flex;
+        width: 100%;
+
+        .col-left {
+          width: 115px;
+          text-align: right;
+          padding-right: 5px;
+        }
+
+        .col-right {
+          float: left;
+          padding-left: 5px;
+          width: calc(100% - 115px);
+        }
+      }
+
+      p {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 2px;
+      }
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      justify-content: space-between;
+
+      li {
+        display: inline-grid;
+      }
+    }
+  }
+
+  &:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .popover_wrapper .tooltip {
+  display: none;
+}
+
+.lte8 .popover_wrapper:hover .tooltip {
+  display: block;
+}
+
+
+.invoice-insights__content__row {
+  .filter__action {
+    border-radius: 50rem;
+    min-width: 28px;
+    min-height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .py-icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      background: rgba($primary, .2);
+    }
+
+  }
+}

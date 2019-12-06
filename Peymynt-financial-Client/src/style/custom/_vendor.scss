@@ -1,0 +1,284 @@
+.vendorWrapper {
+  .vendorTable {
+    thead {
+      tr {
+        th:nth-child(5) {
+          width: 160px;
+        }
+      }
+    }
+
+    .vendorStatus {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .dropdown-circle {
+    .btn-cirle {
+      width: 30px;
+      height: 29px;
+      line-height: 29px;
+      padding: 0 !important;
+    }
+  }
+
+  .dropdown-item {
+    padding: 4px 16px !important;
+    line-height: 22px;
+  }
+
+  .dropdown-menu {
+    min-width: 8rem !important;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(77, 101, 117, 0.1), 0 3px 10px 0 rgba(77, 101, 117, 0.2);
+
+    hr {
+      margin: 8px 0 !important;
+    }
+  }
+
+  .add-bank-details,
+  .view-bank-details {
+    .py-header--page {
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .add-bank-details {
+    max-width: 990px;
+    padding: 24px 0;
+
+    .content {
+      padding-top: 14px;
+    }
+
+    .header {
+      .btn {
+        letter-spacing: normal;
+        border: 1px solid #b2c2cd;
+        padding: 8px 20px;
+        font-weight: 600;
+
+        &:hover {
+          color: $primary;
+          border-color: $primary;
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .bank-form {
+    .label {
+      font-size: 16px;
+      padding-right: 8px !important;
+
+      .required {
+        color: #c22929;
+        display: inline-block;
+        margin-left: 1px;
+      }
+    }
+
+    .form-check-label {
+      font-size: 16px;
+    }
+
+    .form-check {
+      padding-left: 1.4rem;
+    }
+
+    .form-check-input {
+      margin-top: .1rem;
+      margin-left: -1.4rem;
+    }
+
+    .form-control {
+      max-width: 160px !important;
+    }
+
+    .radio-container {
+      padding-top: 7px !important;
+    }
+
+    .btn-container {
+      margin-top: 24px;
+    }
+
+    .information-section {
+      padding: 24px;
+      margin: 64px 0 24px;
+      background-color: #e6f1ff;
+      border-width: 0;
+      box-shadow: none;
+      border-radius: 8px;
+      min-height: 248px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 370px;
+        max-height: 200px;
+      }
+    }
+  }
+
+  .view-bank-details {
+    max-width: 990px;
+    padding: 24px 0;
+
+    .header {
+      //.btn {
+      //  letter-spacing: normal;
+      //  border: 1px solid #b2c2cd;
+      //  padding: 8px 20px;
+      //  font-weight: 600;
+      //
+      //  &:hover {
+      //    color: $primary;
+      //    border-color: $primary;
+      //    background: transparent;
+      //  }
+      //}
+    }
+
+    .content {
+      padding-top: 14px;
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn {
+          color: #4d6575;
+          background: #ecf0f3;
+          border: 1px solid transparent !important;
+          padding: 8px 20px;
+          min-width: 100px;
+          text-align: center;
+
+          &:hover {
+            background: #e0f4fb;
+          }
+        }
+      }
+
+      .heading {
+        font-size: 19px;
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .table {
+      margin-top: 8px;
+      table-layout: fixed;
+      background-color: #fff;
+      border: 1px solid #f0f4fa;
+      border-radius: 4px;
+
+      td {
+        padding: 7px 12px;
+        line-height: 20px;
+        text-align: left;
+        border: none;
+        border-top: 1px solid #ededed;
+        background-color: #fff;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.vendorFormWrapper {
+  label {
+    padding-right: 8px !important;
+  }
+
+  .business-name {
+    display: block;
+    margin-top: 12px;
+    font-weight: $font-weight-bold;
+    line-height: 22.4px;
+  }
+
+  .form-check-label {
+    margin-bottom: 8px;
+  }
+
+  .field-container {
+    padding-left: 0 !important;
+  }
+
+  .check-group-container {
+    padding-top: 10px;
+  }
+
+  .form-control {
+    max-width: 320px !important;
+
+    &:disabled,
+    &[readonly] {
+      background: #f1f3f3 !important;
+    }
+
+  }
+
+  .btn:disabled {
+    cursor: not-allowed !important;
+  }
+}
+
+.form-control {
+  &.has-errors {
+    border-color: #c22929;
+  }
+}
+
+.input-error-text {
+  color: #c22929;
+  font-size: 14px;
+}
+
+.no-vendors-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    margin: 32px 0 16px;
+    font-size: 23px;
+    font-weight: $font-weight-bold;
+  }
+
+  p {
+    padding: 16px 0;
+    max-width: 450px;
+    text-align: center;
+  }
+}
+
+
+.vendor-list-table {
+  tbody {
+    .py-table__row {
+      cursor: pointer;
+    }
+  }
+
+  .py-table__cell {
+    .badge {
+      width: 100%;
+      display: block;
+    }
+  }
+}

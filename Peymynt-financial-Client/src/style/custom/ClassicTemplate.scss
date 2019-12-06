@@ -1,0 +1,397 @@
+.classic-template {
+    font-family: Georgia,Times,Times New Roman,serif;
+    .py-heading--subtitle, .py-heading--title, .py-table__cell, .py-table__cell-amount, .py-text, .py-text--strong {
+      font-family: Georgia,Times,Times New Roman,serif;
+    }
+  }
+
+  .classic-template__divider--full-width {
+    border-top: none;
+    border-bottom: 1px dotted #000;
+  }
+
+  .classic-template {
+    font-size: 14px;
+    position: relative;
+    padding: 16px;
+    min-height: 1070px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+  .classic-template__hr-double {
+    border: none;
+    border-top: medium double #dee1e2;
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .classic-template {
+    .py-table__cell, .py-table__cell-amount, .py-text, .py-text--strong {
+      font-size: 14px;
+    }
+    .py-text{
+
+      line-height: 16px;
+      margin: 0;
+      display: inline-block;
+    }
+    .py-heading--title {
+      display: inline;
+      border-width: 10px;
+      margin: 0;
+      font-size: 30px;
+      font-weight: 300;
+    }
+    .py-heading--subtitle {
+      word-wrap: break-word;
+      color: gray;
+      font-size: 14px;
+      margin-top: 0;
+      line-height: 16px;
+    }
+  }
+
+  .classic-template__separator {
+    margin: 20px 14px 0;
+  }
+
+  .classic-template__separator__header {
+    display: flex;
+    align-items: center;
+  }
+
+  .classic-template__separator__header__frame {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .classic-template__separator__header__frame__text {
+    border-width: 2px 0;
+    border-style: solid;
+    height: 56px;
+    line-height: 64px;
+    position: relative;
+    padding: 0 10px;
+    &:after, &:before {
+      content: "";
+      position: absolute;
+    //   top: -8px;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      border-width: 2px 0;
+      border-style: solid;
+      border-color: inherit;
+    }
+  }
+
+  .classic-template__separator__header hr {
+    border-width: 2px 0;
+    border-style: solid;
+    padding: 2px 0;
+    flex-grow: 2;
+    margin: 40px 0;
+    // border-top-color: none;
+  }
+
+  .classic-template__separator__subheader {
+    text-align: center;
+  }
+
+  .classic-template__header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 14px 0;
+  }
+
+  .classic-template__header__logo {
+    flex-grow: 1;
+    // img {
+    //   max-height: 120px;
+    // }
+  }
+
+  .classic-template__header__info {
+    flex-grow: 1;
+    text-align: right;
+    max-width: 460px;
+  }
+
+  .classic-template .invoice-template-details .py-table__row--header .py-table__cell {
+    &:first-child {
+      min-width: 145px;
+    }
+    &:last-child {
+      min-width: 125px;
+    }
+  }
+
+  .classic-template__metadata {
+    display: flex;
+  }
+
+  .classic-template__metadata__customer {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .classic-template__metadata__customer__wrapper {
+    display: flex;
+  }
+
+  .classic-template__metadata__customer--billing {
+    flex-grow: 1;
+    padding-right: 10px;
+  }
+
+  .classic-template__metadata__customer--shipping {
+    flex-grow: 3;
+    padding-right: 10px;
+  }
+
+  .classic-template__metadata__customer-address-header .py-text {
+    font-size: 14px;
+    color: #8c959a;
+  }
+
+  .classic-template__metadata__customer .py-text {
+    line-height: 18px;
+  }
+
+  .classic-template__metadata .invoice-template-details {
+    margin-top: -5px;
+    .py-table__row:hover {
+      background: none;
+    }
+    .py-table__cell {
+      padding-top: 0;
+      padding-bottom: 0;
+      &:first-child {
+        text-align: right;
+      }
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+    .py-table__row:last-child {
+      background: #f4f5f5;
+      .py-table__cell {
+        &:first-child {
+          border-radius: 40px 0 0 40px;
+          padding: 5px 15px;
+        }
+        &:nth-child(2) {
+          border-radius: 0 40px 40px 0;
+          padding: 5px 0;
+          .py-text--body {
+            font-weight: 600;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .classic-template__items {
+    margin: 0 0 15px;
+    padding: 0 15px;
+  }
+
+  .classic-template__items__column--center {
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .classic-template__items {
+    .py-text--strong {
+      font-size: 14px;
+    }
+    .py-table__cell {
+      word-break: break-word;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    .py-table__body {
+      border-top: 1px dotted #000;
+      border-bottom: 1px dotted #000;
+      margin-bottom: 10px;
+      .py-table__row {
+        border: none;
+        .no-items-message {
+          text-align: center;
+        }
+      }
+      .py-table__cell--nested {
+        color: inherit;
+        white-space: pre-line;
+        font-size: 14px;
+      }
+    }
+    .py-table__header {
+      background-color: #fff;
+      border: none;
+      .py-table__row {
+        border: none;
+      }
+      .py-table__cell, .py-table__cell-amount {
+        text-transform: none;
+        font-weight: 600;
+        color: #4c5357;
+        padding-bottom: 20px;
+        white-space: pre-line;
+      }
+    }
+    .py-table__cell-amount {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 125px;
+      vertical-align: top;
+      white-space: pre-line;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .classic-template__divider--small-margin .py-divider {
+    margin: 3px auto;
+  }
+
+  .classic-template__totals {
+    display: flex;
+    margin-bottom: 35px;
+    .invoice-template-taxes__row__amount {
+      width: 145px;
+      margin-left: 10px;
+    }
+  }
+
+  .classic-template__totals__blank {
+    flex-grow: 5;
+  }
+
+  .classic-template__totals__amounts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 14px;
+  }
+
+  .classic-template__totals__amounts__line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .classic-template__totals__amounts__line__amount {
+    width: 145px;
+    margin-left: 10px;
+  }
+
+  .classic-template__memo {
+    margin: 0 14px 35px;
+    white-space: pre-line;
+    word-wrap: break-word;
+
+  }
+
+  .py-invoice-template__memo{
+    .py-text--strong {
+        margin: 8px 0;
+        display: block;
+      }
+      .py-text{
+        display: block;
+      }
+  }
+
+  .classic-template__footer {
+    margin: 0 14px 15px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+  }
+
+  .classic-template__header__info{
+      .py-text{
+          margin: 0px;
+          line-height: 16px;      }
+  }
+
+  .classic-template__separator__header__frame{
+    .py-heading--title {
+        display: inline;
+        border-width: 10px;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 300;
+      }
+  }
+
+  .classic-template__separator__header__frame__text {
+    height: 60px;
+}
+
+.template-metadata-customer-billing,
+.template-metadata-customer-shipping{
+    line-height: 18px;
+}
+
+.template-metadat-customer-address-header{
+  margin-bottom: 5px;
+}
+
+.template-metadata-customer-address{
+    line-height: 18px;
+}
+
+.py-table__body .py-table__row:hover, .py-table__rowgroup .py-table__row:hover {
+  background-color: rgba($border-color, .2);
+}
+
+.py-invoice-template__row-amount{
+    span{
+      min-width: 125px;
+      display: inline-block;
+    }
+  }
+  .py-invoice-template__row-amount {
+    margin-left: 1rem!important;
+    min-width: auto!important;;
+    max-width: 100%!important;;
+    overflow: visible!important;;
+    text-align: right!important;;
+  }
+
+
+  .py-invoice-template__row-amount {
+    margin-left: 10px !important;
+}
+
+.invoice-template-details{
+  td{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.py-invoice-template__row-amount{
+  .py-text{
+    margin: 0px!important;
+    line-height: 16px!important;
+    font-size: 14px!important;
+  }
+}
+
+.py-invoice-template__row.py-invoice-template__due{
+  .py-invoice-template__row-amount{
+    margin-left: 91px!important;
+  }
+}

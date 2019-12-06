@@ -1,0 +1,89 @@
+.py-heading--subtitle {
+    color: #718fa2;
+    font-weight: normal;
+}
+.py-box.is-highlighted {
+    box-shadow: 0 8px 32px rgba(77,101,117,0.35);
+    border-radius: 12px;
+    border-color: transparent;
+}
+.py-input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2f3546;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ffffff;
+    border: 1px solid #ADC0C7;
+    border-radius: 4px;
+    border-right: none !important;
+    margin-top: 4px;
+}
+.py-form-control {
+    height: 50px !important;
+}
+.py-section-title{
+    font-size: 23px;
+
+}
+.py-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.py-check-list li {
+
+    margin-bottom: 10px;
+}
+.py-check-list i.fa {
+    margin-right: 10px;
+    color: #23c770;
+}
+.bank_options {
+    display: flex;
+}
+.py-heading--subtitle-wbtn {
+    margin: 0;
+    flex: 1;
+}
+.py-full
+{
+    width: 100%;
+}
+.py--grey-text
+{
+    color :rgba(47, 53, 70, 0.6);
+}
+.py--btn-edit
+{
+    color: #4d6575 !important;
+    background: rgba(0,0,0,0);
+    border: 1px solid #b2c2cd;
+    width: 53px!important;
+    height: 40px!important;
+    text-align: center;
+    opacity: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 40px;
+    font-size: 15px;
+    padding: 0px !important;
+    display: block;
+    border-radius: 50%;
+}
+.py--btn-edit i
+{ 
+    color: #4d6575;
+}
+.text-auto
+{
+    text-align: initial;
+}
+.py--import-padding {
+    padding: 0px 20px;
+}

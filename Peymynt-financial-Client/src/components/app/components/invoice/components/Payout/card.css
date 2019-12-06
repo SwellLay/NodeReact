@@ -1,0 +1,3 @@
+form .InputContainer .InputElement::placeholder{
+    color: red !important;
+}

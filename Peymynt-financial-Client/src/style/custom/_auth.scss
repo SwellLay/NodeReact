@@ -1,0 +1,159 @@
+.img-bg{
+    background-image: url(https://images.unsplash.com/photo-1562184760-a11b3cf7c169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80);
+    background-size: cover;
+    position: relative;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    .content {
+        position: relative;
+        z-index: 1;
+        color: #ffffff !important;
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #edf4f8;
+            margin: 1em 0;
+            padding: 0;
+        }
+    }
+}
+.mainApp{
+    background: #fff !important;
+}
+.overlay{
+    &:after{
+        background-image: linear-gradient(-135deg, rgba(16, 20, 128, 0.7) 25%, rgba(159, 85, 255, 0.7) 100%);
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(39, 51, 62, 0.6);
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+.logo {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.btn-social--google {
+    text-align: center;
+    background-color: $primary !important; 
+    color: $white !important;  
+    padding: 1rem;
+    font-size: 1rem !important;
+    font-family: $base-font-family !important;
+    font-weight: $font-weight-bold;
+    border-radius: 50rem !important;
+
+    > span {
+        width: 100%;
+        text-align: center;
+    }
+
+    > div {
+        min-width: 35px;
+        min-height: 35px;
+        width: 35px;
+        height: 35px;
+        margin: 2px 0 2px 4px;
+        border-radius: 50rem !important;
+        padding: 0 !important;
+        line-height: 33px;
+    }
+}
+
+
+.py-page__login {
+    .py-heading--title {
+        margin-top:1rem;
+        margin-bottom: 3rem;
+    }
+
+    // .form-control {
+    //     font-style: normal;
+    //     border-width: 2px;
+    // }
+
+    ::placeholder {
+        font-style: normal !important;
+    }
+}
+
+
+.create-businessform .Select {
+    padding: 0 !important;
+    height: 43px;
+}
+
+
+.create-businessform .Select .Select-control {border: none !important;}
+
+.create-businessform .form-control {
+    height: 45px !important;
+}
+
+.py-page__auth {
+    background: $white;
+    max-height: 100vh;
+    overflow-y: auto;
+    
+    .py-page__login {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .py-text--divider {
+        margin: 2rem auto;
+    }
+
+    .form-group {
+        margin-bottom: .5rem;
+    }
+    // .alert-fixed {
+    //     position: fixed !important;
+    //     max-width: 66.66667% !important;
+    //     width: 100% !important;
+    //     margin: 0 !important;
+    //     margin-left: auto;
+    //     right: 0;
+    //     top: 1rem;
+    //     display: block;
+    // }
+    // .alert {
+    //     display: inline-block;
+    //     width: 100%;
+       
+
+    //     &.alert-danger {
+    //         border:2px solid rgba($danger, .6) !important;
+    //         background: rgba($danger, .4);
+    //         color: $danger;
+    //     }
+    // }
+}
+
+.py-page__auth {
+    .spinner-wrapper {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}

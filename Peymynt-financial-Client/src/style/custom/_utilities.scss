@@ -1,0 +1,32 @@
+// view port heights generator
+@for $i from 1 through 10 {
+  $height: ($i * 10);
+
+  .height-#{$height} {
+    min-height: #{$height}vh;
+  }
+}
+
+
+.py-text--divider {
+  font-size: 16px;
+  color: $black;
+  text-align: center;
+  border-bottom: 2px solid $border-color;
+  line-height: 0em;
+  display: block;
+  margin: 2rem 0;
+
+
+  span {
+      background: $white;
+      padding: 0 8px;
+      color: rgba($black, .6);
+  }
+}
+
+
+
+.u-o--hidden {
+  overflow: hidden;
+}

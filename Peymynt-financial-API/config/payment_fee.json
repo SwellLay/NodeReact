@@ -1,0 +1,30 @@
+[
+    {
+        "type": "card",
+        "fee": {
+            "dynamic": 0.029,
+            "fixed": 0.30
+        },
+        "currencies": [
+            "USD"
+        ]
+    },
+    {
+        "type": "bank",
+        "fee": {
+            "dynamic": 0.0,
+            "fixed": 0.01
+        },
+        "currencies": [
+            "USD"
+        ]
+    },
+    {
+        "type": "manual",
+        "fee": {
+            "dynamic": 0.0,
+            "fixed": 0.0
+        },
+        "currencies": []
+    }
+]

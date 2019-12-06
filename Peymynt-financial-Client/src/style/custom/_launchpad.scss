@@ -1,0 +1,214 @@
+.launchpad-wrapper {
+  .page-header {
+    text-align: center;
+    margin-bottom: 24px;
+
+    .heading {
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-delay: .2s;
+
+      font-size: 33px;
+      line-height: 1.4;
+      font-weight: $font-weight-bold;
+      margin: 32px 0 16px;
+      letter-spacing: -0.015em;
+    }
+
+    .info {
+      margin: auto;
+      margin-bottom: 16px;
+      max-width: 700px;
+      color: #718fa2;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 1.4;
+    }
+
+    .sub-heading {
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-delay: .2s;
+
+      margin: 0 auto;
+      max-width: 700px;
+
+      line-height: 1.4;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    max-width: 800px !important;
+    margin: auto;
+  }
+
+  .item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    animation-name: fadeInUp;
+    position: relative;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+
+    margin: 8px;
+    max-width: 256px;
+    min-width: 200px;
+    flex-basis: 200px;
+    padding: 24px;
+
+    text-align: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1px solid #b2c2cd;
+    background-color: #fff;
+    transition: all 0.25s;
+    color: $black;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      box-shadow: 0 8px 32px rgba(77, 101, 117, 0.35);
+      border-color: transparent;
+      transform: translateY(-4px);
+    }
+
+    img {
+      width: 80%;
+      display: block;
+    }
+
+    .label {
+      margin-top: 16px;
+      font-size: 19px;
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    .description {
+      margin: 8px 0 0;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.launchpad-content-wrapper {
+  .content {
+    &.bookkeeping {
+      max-width: 700px !important;
+    }
+  }
+
+  .item {
+    max-width: 176px;
+    min-width: 160px;
+    -webkit-flex-basis: 160px;
+    flex-basis: 160px;
+
+    .icon {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  .extra-container {
+    text-align: center;
+
+    a {
+      display: block;
+      animation-name: fadeInUp;
+      animation-duration: .6s;
+      animation-delay: .3s;
+      animation-fill-mode: both;
+
+      margin: 16px 0;
+      font-weight: $font-weight-bold;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.launchpad-modal {
+  .modal-header {
+    position: relative;
+    border-bottom: none;
+    padding: 32px 80px 0;
+
+    .modal-title {
+      font-size: 33px;
+    }
+
+    .close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  .modal-body {
+    padding: 10px 80px 32px;
+  }
+
+  .help-block {
+    margin: 13px 0 20px;
+    font-size: 14px;
+    color: #4d6575;
+    line-height: 1.4;
+  }
+
+  .modal-footer {
+    border: none;
+    background-color: #f1f3f3;
+    padding: 25px 80px;
+    display: block;
+  }
+
+  .footer-heading {
+    font-size: 19px;
+  }
+
+  ul {
+    margin: 16px 0 !important;
+    text-align: left;
+    padding-left: 20px;
+    list-style: disc;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    top: 20px
+  }
+  to {
+    opacity: 1;
+    top: 0
+  }
+}

@@ -1,0 +1,27 @@
+.py-list--small {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    // margin-bottom: 0.5rem;
+  }
+  
+}
+
+.py-list--icon {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  .icon {
+    margin-right: 1rem;
+    display: inline-block;
+    fill: #23c770;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+}

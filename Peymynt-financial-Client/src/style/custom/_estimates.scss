@@ -1,0 +1,621 @@
+// Irfan
+
+
+.estimateWrapper {
+    .editableDiv {
+        min-height: 100px;
+        max-height: 100px;
+        overflow: auto;
+    }
+
+    .tableCalculation {
+        tr td {
+            border: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: right;
+        }
+    }
+
+    // .nvoice-bill-totals {
+    //     .totalSection {
+    //         .totalValues {
+    //             // padding: 0 80px 10px 0 !important;
+    //             text-align: right;
+
+    //             .dyWrapper {
+    //                 .dyValues {
+    //                     padding-left: 30px !important;
+    //                     text-align: right;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    .pdfTable-total {
+        max-width: 200px;
+        word-break: break-all;
+    }
+
+    .pdfTable-price {
+        max-width: 200px;
+        word-break: break-all;
+    }
+
+    .pdfTable-quantity {
+        max-width: 100px;
+        text-align: center;
+    }
+
+    .pdfTable-item {
+        max-width: 300px;
+        word-break: break-all;
+    }
+
+    //Jalaj End
+
+    .export-template {
+        min-height: 1024px;
+    }
+
+    .filter {
+        .py-box--gray {
+            margin-top: 8px;
+
+            .col-sm-1 {
+                -ms-flex: 0 0 0.333%;
+                flex: 0 0 0.333%;
+                max-width: 0.333%;
+                padding: 0;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .card-invoice {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 16px 30px 20px;
+
+        .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            margin-top: 25px;
+            padding: 0;
+
+            .heading-title {
+                font-size: 36px;
+                line-height: 40px;
+            }
+
+            .heading-subtitle {
+                word-wrap: break-word;
+                color: gray;
+                font-size: 13px;
+                line-height: 16px;
+                margin-bottom: 16px;
+            }
+
+            .text-strong {
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            .info-address {
+                font-size: 13px;
+            }
+        }
+
+        .divider-full-width {
+            margin-left: -16px;
+            margin-right: -16px;
+            border-bottom: 1px solid #dee1e2;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .card-body {
+            padding: 0;
+
+            .template-metadata {
+                margin-right: -16px;
+                display: -webkit-flex;
+                display: flex;
+                line-height: 16px;
+                font-size: 13px;
+
+                .template-metadata-customer {
+                    -webkit-flex-grow: 1;
+                    flex-grow: 1;
+                    padding-top: 4px;
+                    display: -webkit-flex;
+                    display: flex;
+
+                    .template-metadata-customer-billing {
+                        -webkit-flex-grow: 1;
+                        flex-grow: 1;
+                        padding-right: 10px;
+
+                        .template-metadat-customer-address-header {
+                            color: #8C959A;
+                        }
+                    }
+
+                    .template-metadata-customer-shipping {
+                        -webkit-flex-grow: 3;
+                        flex-grow: 3;
+                        padding-right: 10px;
+                    }
+
+                }
+
+                .invoice-template-details {
+                    padding-right: 15px;
+
+                    .table {
+                        tr {
+                            border: none;
+                            line-height: 26px;
+
+                            td {
+                                padding: 0 15px 0 0;
+                                border-bottom: none;
+                                border-top: none !important;
+
+                                &:first-child {
+                                    text-align: right;
+                                    min-width: 130px;
+                                    vertical-align: top;
+
+                                }
+                            }
+                        }
+
+                        .total-row {
+                            background: #f4f5f5;
+
+                            .table-cell-first {
+                                padding: 5px 15px !important;
+                            }
+
+                            .table-cell-second {
+                                padding: 5px 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .template-items {
+                margin-top: 30px;
+                margin-left: -16px;
+                margin-right: -16px;
+
+                .table {
+                    thead {
+                        background-color: #444444;
+                    }
+
+                    tr {
+                        th {
+                            text-transform: inherit;
+                            font-weight: 600;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            color: #fff;
+                            background-color: #212529;
+
+                            &:first-child {
+                                padding-left: 30px;
+                            }
+                        }
+
+                        td {
+                            &:first-child {
+                                padding-left: 30px;
+                            }
+
+                            .invoice-product-description {
+                                color: #4c5357;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .template-divider-bold {
+                margin-left: -16px;
+                margin-right: -16px;
+                border-bottom: 3px solid #dee1e2;
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+
+            .template-totals {
+                display: -webkit-flex;
+                display: flex;
+                margin-bottom: 35px;
+                margin-left: -16px;
+                margin-right: -16px;
+            }
+
+            .template-totals-blank {
+                -webkit-flex-grow: 5;
+                flex-grow: 5;
+            }
+
+            .template-totals-amounts {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                text-align: right;
+                margin-right: 15px;
+
+                .template-totals-amounts-line {
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-justify-content: flex-end;
+                    justify-content: space-between;
+                    line-height: 26px;
+                }
+
+                .template-totals-amounts-line-amount {
+                    margin-left: 30px;
+                    min-width: 125px;
+                    text-align: right;
+                    padding-right: 30px;
+                }
+
+            }
+
+            .template-divider-small-margin {
+                margin: 8px 0;
+            }
+
+            .template-divider {
+
+                border-bottom: 1px solid #dee1e2;
+            }
+
+            .template-divider-bold {
+                border-bottom: 3px solid #dee1e2;
+            }
+
+            .template-memo {
+                margin: 0 0 35px;
+                word-wrap: break-word;
+            }
+
+            .template-footer {
+                margin: 0 30px 15px;
+                text-align: center;
+                line-height: 16px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                white-space: pre-wrap;
+            }
+        }
+    }
+
+    .table-estimate {
+        tr {
+            td {
+                .text-left {
+                    >div {
+                        min-height: 29px;
+                        border-color: #e7f0f6;
+
+                        >div {
+                            padding: 0 8px;
+
+                            +div {
+                                padding: 0;
+
+                                >div {
+                                    padding: 2px 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .modal-email {
+        max-width: 500px !important;
+
+        .modal-body {
+            .form-email {
+                .Select--single {
+                    .Select-control {
+                        .Select-arrow-zone {
+                            .Select-arrow {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown-menu-item .dropdown-link li a.print {
+        font-size: 16px;
+    }
+
+    .textarea-box {
+        border: 1px solid #b2c2cd !important;
+        padding: 0 8px !important;
+    }
+
+    .select-40 .Select-control {
+        height: 40px;
+    }
+
+    .loader {
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+.estimate__filter__container {
+    .react-datepicker-wrapper {
+        width: auto;
+    }
+
+    .py-box {
+        margin-top: 1rem;
+    }
+}
+
+.estimate-list-table {
+
+    .py-table__row,
+    tr {
+
+        .py-table__cell,
+        .py-table__cell-amount,
+        .py-table__cell__actions,
+        th {
+            &:not(:last-child) {
+                word-wrap: break-word;
+                word-break: break-word;
+                overflow: hidden;
+            }
+
+            &:first-child {
+                width: 66px;
+            }
+
+            &:nth-child(2) {
+                width: 120px;
+            }
+
+            &:nth-child(3) {
+                width: 105px;
+                max-width: 105px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            &:nth-child(4) {
+                width: 260px;
+            }
+
+            &:nth-child(5) {
+                text-align: right;
+                width: 115px;
+            }
+
+            &:last-child {
+                width: 50px;
+            }
+        }
+    }
+
+    tbody {
+        .py-table__row {
+            cursor: pointer;
+        }
+    }
+}
+
+.invoice-status-badge {
+    min-width: 200px;
+    background: #ecf0f3;
+    padding: 12px;
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.js-public--link {
+    font-size: 13px;
+    padding: 4px;
+    min-height: auto !important;
+}
+
+.copy-helper {
+    font-size: 10px !important;
+}
+
+#EstinamateInvoice__Preview {
+    .modern-template__metadata {
+        margin: 30px 30px 20px;
+    }
+}
+
+.estimate-list__reciept-list {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba($primary, .1);
+    color: $primary;
+    border: 1px solid rgba($primary, .4);
+    margin-bottom: 8px;
+
+    i {
+        margin-right: 4px;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        color: $primary;
+        cursor: pointer;
+    }
+}
+
+
+.estimate_form__container {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+
+    .py-box--header {
+        display: flex;
+        padding: 1rem 24px;
+        border-bottom: 1px solid $border-color;
+
+
+        .py-form-field {
+            margin: 0;
+        }
+    }
+
+    .py-box--footer {
+        padding: 1rem 24px;
+        background-color: #F6F8F9;
+        border-top: 1px solid $border-color;
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            min-width: 200px;
+            text-align: center;
+        }
+    }
+
+    .py-form-field--inline {
+        align-items: center;
+
+        .py-form-field__label {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.estimate-form__info__container {
+    padding: 24px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+
+.estimate__form__builder {
+    padding: 0;
+    border: 0;
+
+    .py-table__header {
+        background: $gray;
+    }
+
+    .py-table__cell,
+    .py-table__cell-amount,
+    .py-table__cell__action {
+
+        &:first-child {
+            padding-left: 24px;
+        }
+
+        &:last-child {
+            padding-right: 24px;
+        }
+
+        &:not(:last-child) {
+            padding-right: 8px;
+        }
+    }
+
+    .py-table__cell__action {
+        max-width: 60px;
+        width: 60px;
+        padding-left: 0;
+    }
+
+    .estimate__form__add_new {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-radius: 4px;
+        font-weight: $font-weight-bold;
+
+        &:hover {
+            background: $gray;
+        }
+    }
+
+    .Select--multi .Select-multi-value-wrapper {
+        white-space: normal;
+
+        .Select-value {
+            display: inline-flex;
+            white-space: nowrap;
+        }
+    }
+}
+
+.estimate_form_item {
+    width: 250px;
+    text-align: left;
+}
+
+.estimate_form_price,
+.estimate_form_quantity {
+    width: 44px;
+    text-align: center;
+    text-align: left;
+}
+
+.estimate_form_quantity {
+
+    .form-control {
+        text-align: center;
+    }
+}
+
+.estimate_form_price {
+    width: 100px;
+}
+
+.estimate_form_description {
+    .form-focus--expand {
+        margin-top: 5px;
+    }
+}
+
+.estimate_form_taxes {
+    white-space: nowrap;
+    width: 150px;
+    text-align: left;
+
+    .Select {
+        white-space: nowrap;
+    }
+}
+
+.estimate_form_amount {
+    max-width: 160px;
+    min-width: 160px;
+    white-space: wrap;
+    word-break: break-all;
+}

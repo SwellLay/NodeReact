@@ -1,0 +1,331 @@
+// Tables
+// Prefix: py-table
+.table {
+  td {
+    vertical-align: inherit;
+  }
+}
+
+.table {
+  thead {
+    tr {
+      &:last-child {
+        border-bottom: 2px solid $border-color;
+      }
+
+      th {
+        border: 0;
+      }
+    }
+
+  }
+
+  tbody {
+    tr {
+      &:first-child {
+        td {
+          border-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.py-table__v__center {
+  .py-table__row {
+
+    .py-table__cell,
+    .py-table__cell-amount,
+    .py-table__cell__action {
+      vertical-align: middle;
+    }
+  }
+}
+
+.table-hover,
+.py-table--hover {
+  tbody {
+
+    .py-table__row,
+    tr {
+      cursor: pointer;
+
+      &:hover {
+        background: $table-hover-bg;
+      }
+    }
+  }
+
+}
+
+.react-bootstrap-table {
+  .table {
+    border: none;
+
+    tr {
+
+      &:last-child {
+        border-bottom: 2px solid $border-color;
+      }
+
+      th {
+        border: 0;
+        padding-top: 20px;
+        padding-bottom: 8px;
+        font-weight: $font-weight-bold;
+        vertical-align: bottom;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid $border-color;
+
+        td {
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+.react-bootstrap-table {
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+  .dropdown .caret {
+    margin: 10px 0 10px 5px;
+    color: #000;
+  }
+
+  .dropup .caret {
+    margin: 10px 0 10px 0;
+    color: #000;
+    content: "";
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+    display: none;
+  }
+
+  th .react-bootstrap-table-sort-order .caret {
+    margin: 10px 6.5px;
+  }
+}
+
+.react-bs-table-sizePerPage-dropdown .dropdown-toggle {
+  color: $black;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.react-bootstrap-table-pagination .react-bootstrap-table-pagination-list .pagination {
+  justify-content: flex-end;
+
+  .page-item {
+    .page-link {
+      color: $primary;
+    }
+
+    &.active .page-link {
+      z-index: 1;
+      color: $white;
+      background-color: $primary;
+      border-color: $primary;
+      border-color: $primary;
+    }
+  }
+}
+
+
+.py-table__header,
+th {
+
+  td,
+  .py-table__cell,
+  .py-table__cell-amount,
+  .py-table__cell__action {
+    padding-top: 20px;
+    padding-bottom: 8px;
+  }
+}
+
+.py-table {
+
+  .py-table__cell,
+  .py-table__cell__action,
+  .py-table__cell-amount {
+    padding: 12px 15px;
+
+    .py-text--hint {
+      white-space: nowrap;
+    }
+
+    .badge {
+      min-width: 100px;
+    }
+  }
+}
+
+.py-table__header {
+  .py-table__row {
+    border-width: 2px;
+  }
+}
+
+.py-table__row {
+  border-bottom: 1px solid $border-color;
+}
+
+.py-table__cell__action__icons {
+  display: flex;
+  align-items: center;
+}
+
+.py-table__cell-amount {
+  text-align: right;
+  // font-variant-numeric: tabular-nums;
+}
+
+.py-table__cell__action {
+  text-align: center;
+  // width: 130px;
+  width: 60px;
+}
+
+
+.py-table__action {
+  margin: 0 .5rem;
+  cursor: pointer;
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+
+
+  .icon {
+    width: unset;
+    height: unset;
+    display: inline-block;
+    cursor: pointer;
+
+
+    +.icon {
+      margin-left: 1rem;
+
+    }
+
+    .pe,
+    .fa,
+    .fas,
+    .far {
+      pointer-events: none;
+
+      &:before {
+        font-size: 20px;
+        text-align: center;
+        color: $black;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        display: inline-block;
+      }
+    }
+
+  }
+}
+
+.py-table__action__danger {
+
+  &:hover {
+
+    a,
+    .fa,
+    .fas,
+    .far,
+    svg {
+      color: $danger;
+      fill: $danger;
+    }
+  }
+
+}
+
+.py-table--condensed,
+.py-table--condensed table {
+
+  thead {
+    tr {
+      th {
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+    }
+  }
+
+  tbody {
+
+    thead {
+      tr {
+        th {
+          padding-right: 8px;
+          padding-left: 8px;
+        }
+      }
+    }
+
+
+    .py-table__row {
+
+      .py-table__cell,
+      .py-table__cell-amount,
+      .py-table__cell__action {
+        padding: 8px;
+      }
+    }
+
+  }
+
+
+}
+
+.py-table--condensed,
+.py-table--condensed>table {
+  thead {
+    th:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.py-table,
+.py-table--condensed {
+  .py-table__row {
+
+    .py-table__cell,
+    .py-table__cell-amount,
+    .py-table__cell__action {
+
+      .badge {
+        min-width: 100px;
+      }
+    }
+  }
+
+}
+
+.py-table__cell {
+  .form-control {
+    margin: 0;
+  }
+}

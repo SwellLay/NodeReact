@@ -1,0 +1,68 @@
+@media print {
+	@page {
+		size: 8.5in 11in portrait;
+		margin: 0;
+	}
+	// .container,
+	// .span12 {
+	// 	width: auto
+	// }
+	body {
+		min-width: 0;
+		width: 100%;
+	}
+	// form,
+	// header,
+	// .header,
+	// footer,
+	// .footer,
+	// .breadcrumb,
+	// .record-links,
+	// .sidebar,
+	// #tabs {
+	// 	display: none
+	// }
+	.invoice-preview__body{
+		width: 100%;
+		.classic-template {
+			height: 100%;
+		}
+		.contemporary-template {
+			height: 100%;
+		}
+		.modern-template{
+			page-break-inside: avoid;
+			height: 100%;
+		}
+	}
+	table {
+		page-break-inside: auto;
+	}
+	tr {
+		page-break-inside: avoid;
+		page-break-after: auto;
+		th{
+			background-color: #cccc !important;
+		}
+	}
+	thead {
+		display: table-header-group;
+	}
+	tfoot {
+		display: table-footer-group
+	}
+	tbody {
+		display: table-row-group
+	}
+	table.totals {
+		page-break-inside: avoid
+	}
+	.print_footer{
+		page-break-inside: avoid;
+		.modern-template__business-info{
+			page-break-inside: avoid;
+		}
+		// border: 10px solid;
+		// page-break-after: auto;
+	}
+}

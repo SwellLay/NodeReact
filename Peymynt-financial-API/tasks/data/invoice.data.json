@@ -1,0 +1,548 @@
+{
+    "invoice": {
+        "onlinePayments": {
+            "systemEnabled": true,
+            "businessEnabled": true,
+            "modeCard": true,
+            "modeBank": true
+        },
+        "createdAt": "2019-07-27T12:21:40.490Z",
+        "uuid": "22f3306f-92c3-4d6a-b8ef-d78f5ac6a159",
+        "status": "overdue",
+        "purchaseOrder": "4324",
+        "notes":"This is notes",
+        "userId": "5c61cbe51ee0f4002e86fc20",
+        "totalAmount": 2000,
+        "items": [
+            {
+                "taxes": [],
+                "position": 0,
+                "item": "5d3c230b9919ac03701d1369",
+                "column1": "HP Envy 2019",
+                "column2": "MemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemo",
+                "column3": 2,
+                "column4": 90000,
+                "amount": 180000
+            },
+            {
+                "taxes": [],
+                "position": 0,
+                "item": "5d3c230b9919ac03701d1369",
+                "column1": "Lenovo idea pad",
+                "column2": "Intel i7 9th Gen, 1TB HDD, 16GB Ram",
+                "column3": 23,
+                "column4": 23000,
+                "amount": 1432000
+            }
+        ],
+        "totalAmountInHomeCurrency": 0,
+        "exchangeRate": 0,
+        "sentVia": "",
+        "footer": "This is footer",
+        "invoiceDate": "2019-07-02T00:00:00.000Z",
+        "dueDate": "2019-07-07T00:00:00.000Z",
+        "isReminder": false,
+        "skipped": false,
+        "invoiceNumber": 55,
+        "subTitle": "This is sub heading of the invoice",
+        "title": "INVOICE",
+        "name": "Invoice",
+        "_id": "5d3c41d4f67c1ab272145576",
+        "dueAmount": 2000,
+        "payments": [],
+        "isRecurring": false,
+        "publicView": {
+            "status": true,
+            "id": "e985c46b-2e7c-4ec4-84d7-30c5a4fed6c4",
+            "shareableLinkUrl": "https://peymynt.com/public/invoice/22f3306f-92c3-4d6a-b8ef-d78f5ac6a159"
+        },
+        "itemHeading": {
+            "column1": {
+                "name": "Items",
+                "shouldShow": true
+            },
+            "column2": {
+                "name": "Hours",
+                "shouldShow": true
+            },
+            "column3": {
+                "name": "Rate",
+                "shouldShow": true
+            },
+            "column4": {
+                "name": "Amount",
+                "shouldShow": true
+            },
+            "hideItem": false,
+            "hideDescription": false,
+            "hideQuantity": false,
+            "hidePrice": false,
+            "hideAmount": false,
+            "savedForFuture": false
+        },
+        "amountBreakup": {
+            "subTotal": 92000,
+            "taxTotal": [
+                {
+                    "_id": "5d5798e9c979b01b80bb62de",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": false,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5c64ffa9df1045002e137283",
+                        "name": "TAx1",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "GST",
+                        "rate": 10,
+                        "description": "",
+                        "taxNumber": "",
+                        "uuid": "fe49bb97-3efd-416d-b24e-21ed152f011c",
+                        "createdAt": "2019-02-14T05:42:01.181Z",
+                        "updatedAt": "2019-02-14T05:42:01.181Z",
+                        "__v": 0
+                    },
+                    "rate": 10,
+                    "amount": 10
+                },
+                {
+                    "_id": "5d5798e9c979b01b80bb62dd",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": false,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5caa80829707d932682b5d82",
+                        "name": "tax25",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "TAX25",
+                        "rate": 25,
+                        "description": "",
+                        "taxNumber": "2525",
+                        "uuid": "d6465e6a-1a87-4faa-bbf4-f1fc0cf99152",
+                        "createdAt": "2019-04-07T22:58:10.398Z",
+                        "updatedAt": "2019-04-07T22:58:10.398Z",
+                        "__v": 0
+                    },
+                    "rate": 25,
+                    "amount": 25
+                },
+                {
+                    "_id": "5d5798e9c979b01b80bb62dc",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": true,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5d5798d4c979b01b80bb62d9",
+                        "name": "TaxWithNumber",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "TaxWithNumber",
+                        "rate": 10,
+                        "description": "TaxWithNumber",
+                        "taxNumber": "987",
+                        "uuid": "f48ead86-217f-4201-bf51-08c1a263f0a9",
+                        "createdAt": "2019-08-17T06:04:04.745Z",
+                        "updatedAt": "2019-08-17T06:04:04.745Z",
+                        "__v": 0
+                    },
+                    "rate": 10,
+                    "amount": 10
+                }
+            ],
+            "total": 145
+        },
+        "currency": {
+            "code": "USD",
+            "name": "U.S. dollar",
+            "symbol": "$",
+            "displayName": "USD ($) U.S. dollar"
+        },
+        "businessId": {
+            "address": {
+                "country": {
+                    "name": "India",
+                    "id": 101,
+                    "sortname": "IN"
+                },
+                "state": {
+                    "id": "39",
+                    "name": "Uttarakhand",
+                    "country_id": "101"
+                },
+                "city": "Ramnagar",
+                "postal": 244715,
+                "addressLine1": "20,Chandra Bhawan",
+                "addressLine2": "Jaspuria Line"
+            },
+            "communication": {
+                "phone": "09639339606",
+                "fax": "888888888",
+                "mobile": "7000628392",
+                "tollFree": "18608978",
+                "website": "www.geeksinvention.com"
+            },
+            "country": {
+                "name": "India",
+                "id": "101"
+            },
+            "currency": {
+                "code": "USD",
+                "name": "US Dollar",
+                "symbol": "$",
+                "displayName": "USD ($)-US Dollar"
+            },
+            "isActive": true,
+            "organizationName": "Geeks Invention",
+            "organizationType": "Partnership",
+            "uuid": "aecec57d-b233-43fc-893f-925e3f3d5bb8",
+            "_id": "5c61cbf91ee0f4002e86fc21"
+        },
+        "customer": {
+            "currency": {
+                "code": "USD",
+                "name": "US Dollar",
+                "symbol": "$",
+                "displayName": "USD ($)-US Dollar"
+            },
+            "communication": {
+                "accountNumber": "",
+                "phone": "890809809809",
+                "fax": "",
+                "mobile": "",
+                "tollFree": "",
+                "website": ""
+            },
+            "addressBilling": {
+                "country": {
+                    "name": "India",
+                    "id": 101
+                },
+                "state": {
+                    "id": "",
+                    "name": "California",
+                    "country_id": ""
+                },
+                "city": "city",
+                "addressLine1": "123 Street, Flora Complex",
+                "addressLine2": "Hilton Tower, Marinara",
+                "postal": "432423"
+            },
+            "addressShipping": {
+                "country": {
+                    "name": "India",
+                    "id": 101
+                },
+                "state": {
+                    "id": "",
+                    "name": "Canada",
+                    "country_id": ""
+                },
+                "contactPerson": "Shipper",
+                "phone": "89987987",
+                "city": "Cansasa",
+                "postal": "3432432",
+                "addressLine1": "Garage no 123",
+                "addressLine2": "Poiun Building",
+                "deliveryNotes": ""
+            },
+            "email": "customeremail@gmail.com",
+            "customerName": "The Kingdom",
+            "firstName": "John",
+            "lastName": "Walter",
+            "userId": "5c61cbe51ee0f4002e86fc20",
+            "isActive": true,
+            "id": "5d303139471eab12a42b1122",
+            "_id": "5d303139471eab12a42b1122",
+            "isShipping": true
+        },
+        "lastViewedOn": "2019-07-27T12:22:04.363Z",
+        "beforeThree": {
+            "enable": false,
+            "notifyDate": null
+        },
+        "beforeSeven": {
+            "enable": false,
+            "notifyDate": null
+        },
+        "beforeFourteen": {
+            "enable": false,
+            "notifyDate": null
+        },
+        "onDueDate": {
+            "enable": false,
+            "notifyDate": null
+        },
+        "afterThree": {
+            "enable": false,
+            "notifyDate": null
+        },
+        "afterSeven": {
+            "enable": false,
+            "notifyDate": null
+        },
+        "afterFourteen": {
+            "enable": false,
+            "notifyDate": null
+        }
+    },
+    "salesSetting": {
+        "invoiceSetting": {
+            "defaultPaymentTerm": {
+                "key": "dueOnReceipt",
+                "value": "Due upon receipt"
+            },
+            "defaultTitle": "Invoice",
+            "defaultSubTitle": "",
+            "defaultFooter": "",
+            "defaultMemo": ""
+        },
+        "estimateSetting": {
+            "defaultTitle": "Estiamte",
+            "defaultSubTitle": "",
+            "defaultFooter": "",
+            "defaultMemo": ""
+        },
+        "itemHeading": {
+            "column1": {
+                "name": "Items",
+                "shouldShow": true
+            },
+            "column2": {
+                "name": "Hours",
+                "shouldShow": true
+            },
+            "column3": {
+                "name": "Rate",
+                "shouldShow": true
+            },
+            "column4": {
+                "name": "Amount",
+                "shouldShow": true
+            },
+            "hideItem": false,
+            "hideDescription": false,
+            "hideQuantity": false,
+            "hidePrice": false,
+            "hideAmount": false
+        },
+        "template": "contemporary",
+        "displayLogo": true,
+        "accentColour": "#00c38a",
+        "isActive": true,
+        "isDeleted": false,
+        "_id": "5cc9adea4b57760fc0259137",
+        "businessId": "5c61cbf91ee0f4002e86fc21",
+        "companyLogo": "https://peymynt-dev.s3.ap-south-1.amazonaws.com/business-public/5c61cbf91ee0f4002e86fc21/logo/caa3d1b1-253b-4967-8aab-f4d1d3806be7-1_EBXc9eJ1YRFLtkNI_djaAw.png",
+        "userId": "5c61cbe51ee0f4002e86fc20",
+        "createdAt": "2019-05-01T14:32:10.219Z",
+        "updatedAt": "2019-07-27T14:00:51.471Z",
+        "__v": 0
+    },
+    "userInfo": {
+        "firstName": "Salman",
+        "lastName": "Raza",
+        "email": "irfaan.aa@gmail.com"
+    },
+    "payments": [
+        {
+            "type": "payment",
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "paymentDate": "2019-08-17T21:13:28.677Z",
+            "amount": 100,
+            "method": "manual",
+            "exchangeRate": 1,
+            "card": {},
+            "bank": {},
+            "id": "5d587678007bf1154c04c1a0",
+            "_id": "5d587678007bf1154c04c1a0",
+            "createdAt": "2019-08-07T21:49:44.165Z",
+            "memo": "Other method",
+            "amountInHomeCurrency": 100,
+            "manual": {
+                "type": "other"
+            },
+            "methodToDisplay": "other",
+            "paymentIcon": "bank"
+        },
+        {
+            "type": "payment",
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "paymentDate": "2019-08-17T21:13:28.677Z",
+            "amount": 50,
+            "method": "manual",
+            "exchangeRate": 1,
+            "card": {},
+            "bank": {},
+            "id": "5d587667007bf1154c04c19f",
+            "_id": "5d587667007bf1154c04c19f",
+            "createdAt": "2019-03-17T21:49:27.135Z",
+            "memo": "paypal",
+            "amountInHomeCurrency": 50,
+            "manual": {
+                "type": "paypal"
+            },
+            "methodToDisplay": "paypal",
+            "paymentIcon": "bank"
+        },
+        {
+            "type": "payment",
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "paymentDate": "2019-08-17T21:13:28.677Z",
+            "amount": 40,
+            "method": "manual",
+            "exchangeRate": 1,
+            "card": {},
+            "bank": {},
+            "id": "5d587658007bf1154c04c19e",
+            "_id": "5d587658007bf1154c04c19e",
+            "createdAt": "2019-01-01T21:49:12.682Z",
+            "memo": "credit",
+            "amountInHomeCurrency": 40,
+            "manual": {
+                "type": "card"
+            },
+            "methodToDisplay": "card",
+            "paymentIcon": "bank"
+        },
+        {
+            "type": "refund",
+            "paymentType": "Invoice",
+            "status": "REFUNDED",
+            "paymentDate": "2019-08-17T22:07:28.704Z",
+            "amount": 35,
+            "id": "5d587aa0007bf1154c04c1a1",
+            "_id": "5d587aa0007bf1154c04c1a1",
+            "createdAt": "2019-08-17T22:07:28.720Z",
+            "method": "card",
+            "methodToDisplay": "card",
+            "card": {
+                "type": "mastercard",
+                "number": "4242",
+                "cardHolderName": "Irf card",
+                "expiryMonth": 3,
+                "expiryYear": 2021
+            }
+        },
+        {
+            "_id": "5d4210f150cfea4c7477b9ef",
+            "bank": {
+                "name": "PNC",
+                "number": "2222",
+                "type": "depository",
+                "subType": "cd",
+                "accountId": "A75AW7q88EinKn1BzA9KuP94RAQwkqc1Nea5p"
+            },
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "method": "bank",
+            "paymentDate": "2019-07-31T22:06:41.640+0000",
+            "account": "bank",
+            "memo": "Payment for Invoice #1",
+            "amount": 1100,
+            "remarks": "INTERNAL_SERVER_ERROR",
+            "methodToDisplay": "bank"
+        },
+        {
+            "type": "payment",
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "paymentDate": "2019-08-17T21:48:43.433Z",
+            "amount": 100,
+            "method": "card",
+            "card": {
+                "type": "visa",
+                "number": "4242",
+                "cardHolderName": "Irf card",
+                "expiryMonth": 3,
+                "expiryYear": 2021
+            },
+            "bank": {},
+            "id": "5d58763b007bf1154c04c19d",
+            "_id": "5d58763b007bf1154c04c19d",
+            "account": "credit_card",
+            "createdAt": "2019-06-17T21:48:43.448Z",
+            "memo": "Payment for Invoice #22",
+            "manual": {},
+            "methodToDisplay": "card"
+        },
+        {
+            "type": "payment",
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "paymentDate": "2019-08-17T21:13:28.677Z",
+            "amount": 30,
+            "method": "manual",
+            "exchangeRate": 1,
+            "card": {},
+            "bank": {},
+            "id": "5d58761b007bf1154c04c19c",
+            "_id": "5d58761b007bf1154c04c19c",
+            "createdAt": "2019-08-12T21:48:11.043Z",
+            "memo": null,
+            "amountInHomeCurrency": 30,
+            "manual": {
+                "type": "cheque"
+            },
+            "methodToDisplay": "cheque",
+            "paymentIcon": "bank"
+        },
+        {
+            "type": "payment",
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "paymentDate": "2019-08-17T21:13:28.677Z",
+            "amount": 20,
+            "method": "manual",
+            "exchangeRate": 1,
+            "card": {},
+            "bank": {},
+            "id": "5d58760d007bf1154c04c19b",
+            "_id": "5d58760d007bf1154c04c19b",
+            "createdAt": "2019-08-15T21:47:57.966Z",
+            "memo": "cash",
+            "amountInHomeCurrency": 20,
+            "manual": {
+                "type": "cash"
+            },
+            "methodToDisplay": "cash",
+            "paymentIcon": "bank"
+        },
+        {
+            "type": "payment",
+            "paymentType": "Invoice",
+            "status": "SUCCESS",
+            "paymentDate": "2019-07-17T21:13:28.677Z",
+            "amount": 10,
+            "method": "manual",
+            "exchangeRate": 1,
+            "card": {},
+            "bank": {},
+            "id": "5d5875ff007bf1154c04c19a",
+            "_id": "5d5875ff007bf1154c04c19a",
+            "createdAt": "2019-08-17T21:47:43.685Z",
+            "memo": "bank",
+            "amountInHomeCurrency": 10,
+            "manual": {
+                "type": "bank"
+            },
+            "methodToDisplay": "bank",
+            "paymentIcon": "bank"
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+.py-select--native {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    min-width: 160px;
+    max-width: 320px;
+    width: 100%;
+
+    .py-form__element {
+        background: $white;
+        width: 100%;
+        padding-right: 1rem;
+        box-shadow: none;
+        appearance: none !important;
+        -webkit-appearance: none;
+        height: 100%;
+        min-height: 40px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    &:after {
+        @extend %dropdown-caret;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.py-select--select {
+    display: inline-block;
+    padding: 0;
+    min-width: 160px;
+    max-width: 320px;
+    width: 100%;
+}
+
+
+.py-select--medium {
+    max-width: 320px;
+    width: 100%;
+    display: block;
+}
+
+// React Select 
+
+.Select-clear {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    text-indent: 1000px;
+    vertical-align: middle;
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 0;
+        height: 14px;
+        width: 2px;
+        background-color: $border-color;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.Select {
+
+
+    &.Select--multi {
+        .Select-value {
+            margin-top: 6px;
+        }
+    }
+
+    .Select-control {
+        border-width: $input-border-width;
+        border-color: $border-color;
+        overflow: visible;
+        min-height: 40px;
+        height: 100%;
+    }
+
+    .Select-placeholder {
+        font-style: italic !important;
+        color: rgba($black, .3) !important;
+    }
+
+
+
+
+    &.is-focused,
+    &.is-open,
+    &.is-focus:not(.is-open) {
+        >.Select-control {
+            box-shadow: $input-focus-box-shadow !important;
+            border-color: $input-focus-border-color !important;
+        }
+    }
+}
+
+.Select-arrow {
+    border-top-color: $gray-500;
+}
+
+.Select-placeholder,
+.Select--single>.Select-control .Select-value {
+    line-height: 38px !important;
+}

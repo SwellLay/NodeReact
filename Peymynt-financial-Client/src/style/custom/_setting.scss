@@ -1,0 +1,265 @@
+.settings-sidebar-wrapper {
+  position: relative;
+  margin-left: 250px;
+  width: 250px;
+  padding: 32px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+  border-right: 1px solid #d4dde3;
+
+  .heading {
+    padding: 0 32px;
+    font-weight: $font-weight-bold;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 23px;
+  }
+
+  .title {
+    font-size: 14px;
+    padding: 8px 32px;
+    color: #4d6575;
+    font-weight: $font-weight-bold;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0 0 16px 0;
+    margin: 0;
+  }
+
+  li {
+    a {
+      padding: 8px 16px;
+      margin: 0 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #136acd;
+      font-weight: $font-weight-bold;
+      border-radius: 4px;
+      display: block;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #f0f4fa;
+      }
+
+      &.is-active {
+        background-color: #f0f4fa;
+        text-decoration: none;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.receipt-settings {
+  max-width: 748px;
+
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+
+    input {
+      margin-top: 3px;
+    }
+
+    .label-content {
+      margin-left: 10px;
+    }
+
+    .help-block {
+      color: #4d6575;
+      font-size: 14px;
+    }
+  }
+}
+
+.invoice-template {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+
+  li {
+    min-width: 150px;
+    width: 100%;
+    height: auto;
+    padding: 4px 4px 4px 4px;
+    list-style-type: none;
+    background-color: #ecf0f3;
+    border-radius: 4px;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+
+    .py-radio {
+      width: 100%;
+      padding: 0 4px;
+      margin-top: 8px;
+    }
+
+    .py-form__element__faux {
+      border-color: $gray-500;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    .py-form__element__label {
+      font-size: 14px;
+    }
+
+    .invoice-preview {
+      position: relative;
+      display: block;
+      width: auto;
+
+      &:hover {
+        .invoice-thumbnail {
+          opacity: .8;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 64px;
+          left: 35px;
+          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5TaGFwZTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9InNlYXJjaCIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgICAgICA8cGF0aCBkPSJNMTQuMzIsMTIuOTA2IEwxNy43MDcsMTYuMjkzIEMxOC4wODU5NzIyLDE2LjY4NTM3ODkgMTguMDgwNTUyNCwxNy4zMDkwODQ4IDE3LjY5NDgxODYsMTcuNjk0ODE4NiBDMTcuMzA5MDg0OCwxOC4wODA1NTI0IDE2LjY4NTM3ODksMTguMDg1OTcyMiAxNi4yOTMsMTcuNzA3IEwxMi45MDYsMTQuMzIgQzkuNTY5NDc4NDQsMTYuOTA5OTY4NSA0Ljc5NDM0ODQ3LDE2LjQ1OTg2ODIgMi4wMDA1NTA4MSwxMy4yOTIwNjAyIEMtMC43OTMyNDY4NTYsMTAuMTI0MjUyMSAtMC42NDMwMTY4OTYsNS4zMzAzMDkzMyAyLjM0MzY0NjIyLDIuMzQzNjQ2MjIgQzUuMzMwMzA5MzMsLTAuNjQzMDE2ODk2IDEwLjEyNDI1MjEsLTAuNzkzMjQ2ODU2IDEzLjI5MjA2MDIsMi4wMDA1NTA4MSBDMTYuNDU5ODY4Miw0Ljc5NDM0ODQ3IDE2LjkwOTk2ODUsOS41Njk0Nzg0NCAxNC4zMiwxMi45MDYgWiBNOCwxNCBDMTEuMzEzNzA4NSwxNCAxNCwxMS4zMTM3MDg1IDE0LDggQzE0LDQuNjg2MjkxNSAxMS4zMTM3MDg1LDIgOCwyIEM0LjY4NjI5MTUsMiAyLDQuNjg2MjkxNSAyLDggQzIsMTEuMzEzNzA4NSA0LjY4NjI5MTUsMTQgOCwxNCBaIiBpZD0iU2hhcGUiPjwvcGF0aD4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==');
+          background-repeat: no-repeat;
+          background-position: 15px 16px;
+          background-size: 24px 24px;
+          background-color: #4d6575;
+          display: block;
+          margin: 0 auto;
+          width: 56px;
+          height: 56px;
+          border-radius: 400px;
+        }
+      }
+    }
+
+    label {
+      margin-bottom: 0px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.image_well {
+  position: relative;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+
+
+  .image {
+    display: inline-block;
+    // background: url('/assets/icons/no-logo.gif') 50% 50% no-repeat;
+    height: 77px;
+    margin-right: 15px;
+    margin-bottom:10px
+  }
+
+  .actions {
+    width: auto;
+    display: inline-block;
+    // margin-top: 10px;
+  }
+}
+
+.form-invoice {
+  .upload-text {
+    padding-left: 23px;
+  }
+
+  .inline-form-control {
+    float: right;
+    width: auto !important;
+    margin-left: 15px;
+  }
+
+  .form-group {
+
+    .radio,
+    .checkbox {
+      label {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.py-page__settings__payments {
+  
+  .py-box {
+    margin-bottom: 56px;
+  }
+  
+}
+
+.py-page__settings__payments {
+  
+  .py-box {
+    margin-bottom: 56px;
+  }
+  
+} 
+
+.credit-card-icons {
+  margin: 0 24px;
+
+  img {
+    width: 40px;
+    margin: 0 1px;
+  }
+}
+
+.bank-logos__wrapper {
+  margin:0 24px;
+
+  img {
+    width: 24px;
+    width: 24px;
+  } 
+}
+
+
+#addEmailModal {
+  .modal-body {
+    padding: 75px 100px;
+  }
+}
+
+.py-form-field__lengend {
+  .py-form-field__hint {
+    margin-left: 36px;
+  }
+}
+
+
+.AccountTerminate__Header {
+  margin-bottom: 32px;
+}
+
+.logo_heading{
+  vertical-align: bottom;
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 33px;
+}
+.py-frame__settings {
+  .remove-logo-checkbox{
+    margin-top:8px;
+  }
+  .py-list--small {
+    .py-checkbox,
+    .py-radio {
+      &:first-child {
+        .py-form__element__faux {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

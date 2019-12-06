@@ -1,0 +1,41 @@
+.import-wrapper {
+  th {
+    white-space: nowrap;
+  }
+
+  .row.no-gutters {
+    * {
+      line-height: 20px;
+    }
+
+    & + br {
+      line-height: 20px;
+    }
+  }
+}
+
+.import-successful {
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+    max-width: 120px;
+  }
+
+  .info-container {
+    margin: 2rem 0 0;
+    text-align: center;
+  }
+
+  h4 {
+    color: #718fa2;
+  }
+
+  .errors {
+    text-align: center;
+  }
+}

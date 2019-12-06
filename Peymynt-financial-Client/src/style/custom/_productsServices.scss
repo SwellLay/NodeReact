@@ -1,0 +1,104 @@
+.productServicesWrapper {
+
+  tbody {
+    tr {
+      td {
+        // word-break: break-word;
+        // word-wrap: break-word;
+        // font-size: 16px;
+        // line-height: 26px;
+        // border-bottom: 1px solid #d4dde3;
+        // padding: 12px 15px !important;
+
+        .pt-badge {
+          font-size: 13px;
+          line-height: 16px;
+          font-weight: $font-weight-bold;
+          display: inline-block;
+          margin: 2px 0;
+          padding: 4px 12px;
+          border-radius: 3px;
+          color: white;
+          white-space: nowrap;
+          text-transform: capitalize;
+        }
+      }
+
+      td:nth-child(1) {
+        text-align: left;
+
+        p {
+          display: block;
+          font-size: 14px;
+          line-height: 18px;
+          color: #687578 !important;
+          margin: 0;
+        }
+      }
+
+      td:nth-child(2) {
+        text-align: right;
+
+        p {
+          display: block;
+          font-size: 14px;
+          line-height: 18px;
+          color: #687578 !important;
+          margin: 0;
+        }
+      }
+
+      td:nth-child(3) {
+        text-align: center;
+
+        a {
+          margin: 0 8px;
+          text-align: center;
+
+          i {
+            width: 20px;
+          }
+        }
+
+      }
+    }
+  }
+
+  //   }
+
+  .header.editProductHeader, .header.addProductHeader {
+    .content {
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .productServices-form {
+    .reactStrap-design {
+      color: #41494f;
+      border-color: #b2c2cd !important;
+      border-radius: .25rem;
+      padding: .375rem .75rem;
+      width: 100%;
+      font-size: 13px;
+    }
+
+    label.col-form-label {
+      font-size: 13px;
+      color: #495f6b !important;
+    }
+  }
+
+  .py-table__cell-amount {
+    text-align: right;
+  }
+}
+
+.tax-modal {
+  .col-form-label {
+    padding-right: 0;
+  }
+}

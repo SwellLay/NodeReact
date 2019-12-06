@@ -1,0 +1,65 @@
+.badge {
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 4px 12px;
+    margin: 2px 0;
+    line-height: 16px;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-weight: $font-weight-bold;
+    display: inline-block;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+
+.badge-lg {
+    line-height: 1.4;
+    font-weight: $font-weight-bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+}
+
+
+/// color schemes
+
+
+
+.badge-primary {
+    background: $primary;
+}
+
+.badge-success {
+    // background: $success !important;
+    // color: darken($success, 50%) !important;
+    // color: $white !important;
+}
+
+.badge-secondary {
+    color: #395260; 
+}
+
+.badge-info {
+    color: $white;
+    // color: darken($info, 40%) !important; 
+}
+
+.badge-warning {
+    color: $white;
+    // color: darken($warning, 50%);
+}
+
+.badge-danger {
+    color: $white;
+    // color: $danger !important;
+    // background: rgba($danger, .2) !important;
+}
+
+.badge-default {
+    background: $gray-100;
+    color: $gray-700;
+}

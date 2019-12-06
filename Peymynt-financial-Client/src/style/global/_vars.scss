@@ -1,0 +1,143 @@
+// Custom Variables
+// Created by: Alex
+
+
+$alert-bg-level: -10;
+$alert-border-level: -9;
+$alert-color-level: 4;
+
+
+$white : #FFFFFF;
+$gray : #F6F8F9 !default;
+$gray-100 : #DFE8EB !default;
+$gray-200 : #dbe3e6 !default;
+$gray-300 : #c6d3d7 !default;
+$gray-400 : #ADC0C7 !default;
+$gray-500 : #9EB4BD !default;
+$gray-600 : rgb(32, 44, 48) !default;
+$gray-700 : #86A5AC !default;
+$gray-800 : hsl(192, 19%, 55%) !default;
+$black : hsl(225, 20%, 23%) !default;
+
+$blue : #1584FF !default;
+$green : #21CC4D !default;
+$purple : #6E0DEA !default;
+$pink : #D642FB !default;
+// $red        : #F78282 !default;
+$red : #fc605a !default;
+$orange : #FFB191 !default;
+$yellow : #FFA329 !default;
+$cyan : #0dc6e3 !default;
+
+
+// Color Theme
+$primary: $purple !default;
+$secondary : $gray-200 !default;
+// $warning: $orange !default;
+$link-color: $primary !default;
+
+// Input
+// $input-color: $gray0;
+$border-width: 1px;
+$input-color: $black !default;
+$input-border-width: 1px;
+
+$body-color: $black !default;
+
+// border
+$border-color: $gray-300 !default;
+$table-hover-bg: $gray !default;
+
+
+
+
+// Buttons
+$btn-bg-color: #ecf0f3;
+$btn-text-color: $gray-700;
+
+
+$font-family-sans-serif: 'py-circular',
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+// $font-family-sans-serif: 'peym eina',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$base-font-family: $font-family-sans-serif !default;
+
+$headings-font-weight: bold !default;
+$font-weight-bold: 600 !default;
+$font-weight-normal: 400 !default;
+
+
+// Radius
+$border-radius: 4px;
+
+// $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+// $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+// $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+
+$box-shadow: 0 .2rem .5rem rgba($black, 0.3) !default;
+
+// shadow
+$shadow-inset: inset 0 1px 3px rgba(0, 0, 0, 0.13),
+0px 1px 0 rgba(255, 255, 255, 0.5);
+
+// icons 
+
+%dropdown-caret {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid $border-color;
+  position: absolute;
+  right: 1rem;
+  top: 18px;
+  pointer-events: none;
+}
+
+%close-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: .5;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 0;
+    height: 24px;
+    width: 2px;
+    background-color: $gray-600;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  span {
+    display: none;
+  }
+}

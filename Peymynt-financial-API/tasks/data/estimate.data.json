@@ -1,0 +1,412 @@
+{
+    "estimate": {
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "displayName": "USD ($)-US Dollar",
+            "name": "US Dollar"
+        },
+        "amountBreakup": {
+            "subTotal": 33,
+            "taxTotal": [
+                {
+                    "_id": "5d5f984c2aa9c704ec2a286c",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": false,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5c64ffa9df1045002e137283",
+                        "name": "TAx1",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "GST",
+                        "rate": 10,
+                        "description": "",
+                        "taxNumber": "",
+                        "uuid": "fe49bb97-3efd-416d-b24e-21ed152f011c",
+                        "createdAt": "2019-02-14T05:42:01.181Z",
+                        "updatedAt": "2019-02-14T05:42:01.181Z",
+                        "__v": 0
+                    },
+                    "rate": 10,
+                    "amount": 3.3000000000000003
+                },
+                {
+                    "_id": "5d5f984c2aa9c704ec2a286b",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": false,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5c64fff4ed1d7001d3ddae5e",
+                        "name": "TAx2",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "GST2",
+                        "rate": 20,
+                        "description": "",
+                        "taxNumber": "",
+                        "uuid": "fe49bb97-3efd-416d-b24e-21ed152f011d",
+                        "createdAt": "2019-02-14T05:42:01.181Z",
+                        "updatedAt": "2019-02-14T05:42:01.181Z"
+                    },
+                    "rate": 20,
+                    "amount": 6.6000000000000005
+                },
+                {
+                    "_id": "5d5f984c2aa9c704ec2a286a",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": false,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5caa80829707d932682b5d82",
+                        "name": "tax25",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "TAX25",
+                        "rate": 25,
+                        "description": "",
+                        "taxNumber": "2525",
+                        "uuid": "d6465e6a-1a87-4faa-bbf4-f1fc0cf99152",
+                        "createdAt": "2019-04-07T22:58:10.398Z",
+                        "updatedAt": "2019-04-07T22:58:10.398Z",
+                        "__v": 0
+                    },
+                    "rate": 25,
+                    "amount": 8.25
+                },
+                {
+                    "_id": "5d5f984c2aa9c704ec2a2869",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": false,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5cc2b4f154141628f858a32b",
+                        "name": "GST",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "GST",
+                        "rate": 10,
+                        "description": "",
+                        "taxNumber": "",
+                        "uuid": "028cd86e-47db-4dfc-83c6-68c02a543c45",
+                        "createdAt": "2019-04-26T07:36:17.919Z",
+                        "updatedAt": "2019-04-26T07:36:17.919Z",
+                        "__v": 0
+                    },
+                    "rate": 10,
+                    "amount": 3.3000000000000003
+                },
+                {
+                    "_id": "5d5f984c2aa9c704ec2a2868",
+                    "taxName": {
+                        "other": {
+                            "showTaxNumber": false,
+                            "isRecoverable": false,
+                            "isCompound": false
+                        },
+                        "isActive": true,
+                        "isDeleted": false,
+                        "_id": "5cc2b6fa54141628f858a32f",
+                        "name": "GST",
+                        "userId": "5c61cbe51ee0f4002e86fc20",
+                        "businessId": "5c61cbf91ee0f4002e86fc21",
+                        "abbreviation": "GST",
+                        "rate": 10,
+                        "description": "",
+                        "taxNumber": "",
+                        "uuid": "05bbf750-fcd7-4d5a-9a9a-b86f4cc0bf63",
+                        "createdAt": "2019-04-26T07:44:58.388Z",
+                        "updatedAt": "2019-04-26T07:44:58.388Z",
+                        "__v": 0
+                    },
+                    "rate": 10,
+                    "amount": 3.3000000000000003
+                }
+            ],
+            "total": 57.75
+        },
+        "invoice": {
+            "isConverted": false
+        },
+        "itemHeading": {
+            "column1": {
+                "name": "Items",
+                "shouldShow": true
+            },
+            "column2": {
+                "name": "Quantity",
+                "shouldShow": true
+            },
+            "column3": {
+                "name": "Price",
+                "shouldShow": true
+            },
+            "column4": {
+                "name": "Amount",
+                "shouldShow": true
+            },
+            "hideItem": false,
+            "hideDescription": false,
+            "hideQuantity": false,
+            "hidePrice": false,
+            "hideAmount": false,
+            "savedForFuture": false
+        },
+        "publicView": {
+            "status": true,
+            "id": "2ac90108-2dbe-4354-a4c6-34ff80bf8d7a",
+            "shareableLinkUrl": "https://dev.peymynt.com/public/estimate/bb4b89c2-6d06-4088-9cc2-9e431e20e013"
+        },
+        "report": {
+            "viewCount": 1,
+            "lastViewedOn": "2019-08-23T19:31:03.288Z"
+        },
+        "status": "viewed",
+        "isActive": true,
+        "isDeleted": false,
+        "_id": "5d5f984c2aa9c704ec2a2867",
+        "name": "Estimate",
+        "estimateNumber": 59,
+        "customer": {
+            "currency": {
+                "code": "USD",
+                "name": "US Dollar",
+                "symbol": "$",
+                "displayName": "USD ($)-US Dollar"
+            },
+            "communication": {
+                "accountNumber": "",
+                "phone": "890809809809",
+                "fax": "",
+                "mobile": "",
+                "tollFree": "",
+                "website": ""
+            },
+            "addressBilling": {
+                "country": {
+                    "name": "India",
+                    "id": 101
+                },
+                "state": {
+                    "id": "",
+                    "name": "California",
+                    "country_id": ""
+                },
+                "city": "city",
+                "addressLine1": "123 Street, Flora Complex",
+                "addressLine2": "Hilton Tower, Marinara",
+                "postal": "432423"
+            },
+            "addressShipping": {
+                "country": {
+                    "name": "India",
+                    "id": 101
+                },
+                "state": {
+                    "id": "",
+                    "name": "Canada",
+                    "country_id": ""
+                },
+                "contactPerson": "Shipper",
+                "phone": "89987987",
+                "city": "Cansasa",
+                "postal": "3432432",
+                "addressLine1": "Garage no 123",
+                "addressLine2": "Poiun Building",
+                "deliveryNotes": ""
+            },
+            "email": "customeremail@gmail.com",
+            "customerName": "The Kingdom",
+            "firstName": "John",
+            "lastName": "Walter",
+            "userId": "5c61cbe51ee0f4002e86fc20",
+            "isActive": true,
+            "id": "5d303139471eab12a42b1122",
+            "_id": "5d303139471eab12a42b1122",
+            "isShipping": true
+        },
+        "exchangeRate": 1,
+        "estimateDate": "2019-08-28T18:30:00.000Z",
+        "expiryDate": "2019-08-28T18:30:00.000Z",
+        "subheading": "why subheading",
+        "footer": "mmm footer",
+        "memo": "some meo",
+        "items": [
+            {
+                "taxes": [
+                    "5c64ffa9df1045002e137283",
+                    "5c64fff4ed1d7001d3ddae5e",
+                    "5caa80829707d932682b5d82",
+                    "5cc2b4f154141628f858a32b",
+                    "5cc2b6fa54141628f858a32f"
+                ],
+                "_id": "5d5f984c2aa9c704ec2a286d",
+                "item": "5cd15a5b8e77f127701e2469",
+                "name": "HP Slatebook 2000",
+                "description": "MemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemoMemo",
+                "quantity": 1,
+                "price": 33,
+                "amount": 33
+            }
+        ],
+        "totalAmount": 57.75,
+        "totalAmountInHomeCurrency": 57.75,
+        "userId": "5c61cbe51ee0f4002e86fc20",
+        "businessId": {
+            "address": {
+                "country": {
+                    "name": "United States",
+                    "id": 231,
+                    "sortname": "US"
+                },
+                "state": {
+                    "id": "3920",
+                    "name": "Alaska",
+                    "country_id": "231"
+                },
+                "city": "MOHALI",
+                "postal": 160059,
+                "addressLine1": "596",
+                "addressLine2": "Phase 2, Mohali"
+            },
+            "communication": {
+                "phone": "+917017003583",
+                "fax": "9639339606",
+                "mobile": "9977400312",
+                "tollFree": "18608978",
+                "website": "www.geeksinvention.com"
+            },
+            "timezone": {
+                "name": "Asia/Kolkata",
+                "offSet": 5,
+                "zoneAbbr": "IST"
+            },
+            "country": {
+                "name": "United States",
+                "id": "231"
+            },
+            "currency": {
+                "code": "USD",
+                "name": "US Dollar",
+                "symbol": "$",
+                "displayName": "USD ($)-US Dollar"
+            },
+            "securityCheck": {
+                "isClosed": false,
+                "isBlocked": false
+            },
+            "isPrimary": true,
+            "users": [
+                "5c61cbe51ee0f4002e86fc20"
+            ],
+            "isActive": true,
+            "isDeleted": false,
+            "_id": "5c61cbf91ee0f4002e86fc21",
+            "organizationName": "Geeks Invention",
+            "organizationType": "Partnership",
+            "businessType": "Artists, Photographers & Creative Types",
+            "businessSubType": "atrists_photographers_creative__craftsperson",
+            "uuid": "aecec57d-b233-43fc-893f-925e3f3d5bb8",
+            "createdAt": "2019-02-11T19:24:41.519Z",
+            "updatedAt": "2019-08-07T11:14:29.326Z",
+            "__v": 0,
+            "meta": {
+                "invoice": {
+                    "firstVisit": true,
+                    "showSetup": true,
+                    "lastInvoiceNumber": 0,
+                    "totalInvoice": 0,
+                    "shouldShowPaymentModal": true
+                },
+                "checkout": {
+                    "firstVisit": true,
+                    "showShowSetup": true,
+                    "totalCheckout": 0
+                },
+                "payment": {
+                    "firstVisit": true,
+                    "showShowSetup": true
+                }
+            }
+        },
+        "purchaseOrder": "dfds",
+        "uuid": "bb4b89c2-6d06-4088-9cc2-9e431e20e013",
+        "createdAt": "2019-08-23T07:39:56.832Z",
+        "updatedAt": "2019-08-23T19:31:03.288Z",
+        "__v": 0
+    },
+    "salesSetting": {
+        "invoiceSetting": {
+            "defaultPaymentTerm": {
+                "key": "dueOnReceipt",
+                "value": "Due upon receipt"
+            },
+            "defaultTitle": "Invoice",
+            "defaultSubTitle": "",
+            "defaultFooter": "",
+            "defaultMemo": ""
+        },
+        "estimateSetting": {
+            "defaultTitle": "Estiamte",
+            "defaultSubTitle": "",
+            "defaultFooter": "",
+            "defaultMemo": ""
+        },
+        "itemHeading": {
+            "column1": {
+                "name": "Items",
+                "shouldShow": true
+            },
+            "column2": {
+                "name": "Quantity",
+                "shouldShow": true
+            },
+            "column3": {
+                "name": "Price",
+                "shouldShow": true
+            },
+            "column4": {
+                "name": "Amount",
+                "shouldShow": true
+            },
+            "hideItem": false,
+            "hideDescription": false,
+            "hideQuantity": false,
+            "hidePrice": false,
+            "hideAmount": false
+        },
+        "template": "contemporary",
+        "displayLogo": true,
+        "accentColour": "#00c38a",
+        "isActive": true,
+        "isDeleted": false,
+        "_id": "5cc9adea4b57760fc0259137",
+        "businessId": "5c61cbf91ee0f4002e86fc21",
+        "companyLogo": "https://peymynt-dev.s3.ap-south-1.amazonaws.com/business-public/5c61cbf91ee0f4002e86fc21/logo/8f2b843e-cbed-4156-a7d7-fb600082b37b-Total (2).png",
+        "userId": "5c61cbe51ee0f4002e86fc20",
+        "createdAt": "2019-05-01T14:32:10.219Z",
+        "updatedAt": "2019-08-21T23:33:39.883Z",
+        "__v": 0
+    },
+    "userInfo": {
+        "firstName": "Jalaj",
+        "lastName": "Goel",
+        "email": "irfaan.aa@gmail.com"
+    }
+}

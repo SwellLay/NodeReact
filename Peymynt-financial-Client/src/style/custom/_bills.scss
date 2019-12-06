@@ -1,0 +1,592 @@
+.select-add-new-option {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  .icon {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    &:before {
+      font-size: inherit;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  }
+
+  .text {
+    line-height: normal;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+}
+
+.billsWrapper {
+  width: 100%;
+
+  .no-wrap {
+    white-space: nowrap;
+  }
+
+  .content-wrapper__main__fixed {
+    max-width: 1600px;
+    width: 100%;
+    padding: 16px 64px;
+  }
+
+  .vendor-filter {
+    .filter-formGroup {
+      vertical-align: middle;
+      align-items: center;
+      display: flex;
+
+      .closeBtn {
+        .pe-7s-close {
+          font-size: 30px;
+        }
+      }
+
+      .react-datepicker-wrapper .react-datepicker__input-container:before {
+        content: "\F133";
+        font: normal normal normal 14px/1 FontAwesome;
+        position: absolute;
+        right: 10px;
+        top: 13px;
+        pointer-events: none;
+        color: #b2c2cd;
+      }
+    }
+
+    .Select {
+      min-width: 210px;
+      margin-right: 20px;
+    }
+
+    .Select-control {
+      height: 40px;
+    }
+
+  }
+
+  select.form-control {
+    max-width: 210px;
+  }
+
+  .react-datepicker-wrapper {
+    input {
+      width: 140px;
+    }
+  }
+
+  .billsTable {
+
+
+    .row {
+      margin: 0;
+    }
+
+    .dropdown-menu {
+      min-width: 11rem;
+    }
+
+    table {
+      thead {
+        tr {
+          th:last-child {
+            text-align: center;
+          }
+        }
+      }
+
+      td {
+        vertical-align: middle;
+      }
+
+      .action-link {
+        color: $primary;
+        margin-right: 8px;
+        margin-top: 5.5px;
+        display: inline-block;
+      }
+    }
+
+    th:nth-child(4) {
+      text-align: right;
+    }
+  }
+
+  .reactStrap-design {
+    color: #41494f;
+    border-color: #b2c2cd !important;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .larger {
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.5s;
+    height: 40px;
+    overflow: auto;
+    -ms-overflow-style: none;
+
+    &:focus {
+      height: 100px;
+    }
+  }
+
+  .textarea-box {
+    border: 1px solid #b2c2cd !important;
+    padding: 0 8px !important;
+  }
+
+  .total-calculations {
+    tr:nth-child(n+2) {
+      td {
+        border-top: none;
+      }
+    }
+  }
+
+  .bill-form {
+    .Select-value {
+      white-space: nowrap;
+
+      &.has-tax-override {
+        background-color: rgba(0, 126, 255, 0.3);
+      }
+    }
+
+    .page.header {
+      margin-bottom: 24px;
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      a {
+        width: 44px;
+        height: 44px;
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid #b2c2cd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus {
+          color: #fff !important;
+          background: #d74242;
+          border-color: #d74242;
+        }
+      }
+    }
+
+    .py-est form label~div {
+      padding-left: 20px;
+      padding-right: 0;
+    }
+
+
+    .top-fields {
+      .form-group {
+        max-width: 300px;
+      }
+
+      input,
+      textarea {
+        width: 150px;
+      }
+
+      .Select-placeholder {
+        // line-height: 38px;
+      }
+
+    }
+
+
+    .po-field {
+      padding: 4px;
+      height: auto !important;
+      width: 160px !important;
+    }
+
+    .notes-column {
+
+      input,
+      textarea {
+        width: 204px;
+      }
+    }
+
+    table {
+      margin-bottom: 6.667px;
+
+      td {
+        vertical-align: middle;
+        border-top: none;
+        border-bottom: 1px solid #dee2e6
+      }
+
+      .Select-control,
+      input {
+        margin-bottom: 5px;
+      }
+    }
+
+    .form-group {
+      label {
+        padding-right: 0;
+        color: #495f6b;
+        font-size: 16px;
+        line-height: 15px;
+      }
+    }
+
+    .exchange-help-block {
+      color: #bbb;
+      font-size: 11px;
+      font-weight: normal;
+      line-height: 14px;
+      display: block;
+      clear: both;
+      margin-top: 5px;
+    }
+
+    .Select-control {
+      min-height: 40px;
+    }
+
+
+    .table-footer-container {
+      position: relative;
+      padding-right: 78px;
+      padding-left: 10px;
+    }
+
+    .add-icon {
+      float: left;
+
+      i {
+        color: $primary;
+        vertical-align: middle;
+        font-weight: 900;
+        margin-right: 3px;
+      }
+
+      span {
+        vertical-align: middle;
+        font-weight: 700;
+      }
+    }
+
+    .payments-table {
+      a {
+        color: #212529 !important;
+      }
+    }
+  }
+
+  .select-tax-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .Select {
+      display: inline-block;
+      width: 100%;
+      margin-right: 3px;
+      vertical-align: middle;
+    }
+  }
+
+  .tableCalculation {
+    float: right;
+    width: auto;
+
+    tr td {
+      border: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: right;
+    }
+
+    .label {
+      padding-right: 37px;
+    }
+
+    .amount {
+      padding-right: 0;
+    }
+  }
+}
+
+.purchase-record-payment {
+  max-width: 640px !important;
+
+  .help-block {
+    margin-top: 4px;
+    color: #4d6575;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .py-form__element__small {
+    max-width: 175px !important;
+  }
+}
+
+.tax-popover {
+  width: 450px;
+  max-width: none;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid rgba(77, 101, 117, 0.07);
+  box-shadow: 0 4px 36px 4px rgba(0, 0, 0, 0.1);
+
+  .popover-body {
+    padding: 24px;
+  }
+
+  .popover-title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: $font-weight-bold;
+  }
+
+  .help-block {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #999;
+  }
+
+  .no-content {
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px
+  }
+
+  .taxes-container {
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+
+  .tax-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .label {
+      text-align: right;
+      width: 100px;
+      padding-right: 20px;
+    }
+
+    .form-control {
+      width: 100px;
+      padding: 8px 10px;
+      height: 46px;
+
+      &+.form-control {
+        margin-left: 2px;
+      }
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+
+    .btn {
+      padding: 4px 16px;
+      min-width: 80px;
+      height: auto;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .btn-separator {
+      margin: 0 8px;
+    }
+
+    a {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .arrow {
+    &::before {
+      border-top-color: rgba(77, 101, 117, 0.07);
+    }
+  }
+}
+
+
+.bill-filter__container {
+  display: flex;
+  align-items: center;
+
+  .bill-filter__name {
+    flex-grow: 1;
+    max-width: 320px;
+    margin-right: 1rem;
+
+    .Select-control,
+    .Select-input {
+      height: 40px;
+    }
+
+    .Select-placeholder,
+    .Select-value {
+      width: auto !important;
+      height: auto !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      bottom: initial !important;
+    }
+  }
+
+  .bill-filter__range {
+    display: flex;
+    align-items: center;
+
+
+    .react-datepicker-wrapper {
+      // max-width: auto;
+      width: auto !important;
+    }
+
+    .fillter__action__btn {
+      margin-left: 8px;
+      cursor: pointer;
+      min-width: 40px;
+      min-height: 40px;
+      vertical-align: middle;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50rem;
+      opacity: .5;
+
+      &:hover {
+        background: rgba($primary, .2);
+        opacity: 1;
+      }
+
+
+      &:focus {
+        >svg {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+}
+
+.bill-list {
+  th {
+    white-space: nowrap;
+
+    &:nth-child(4) {
+      text-align: right;
+    }
+
+    &:nth-child(5) {
+      width: 140px;
+    }
+
+    &:last-child {
+      text-align: center;
+    }
+  }
+
+  tbody {
+    .py-table__row {
+      cursor: pointer;
+    }
+  }
+
+  .py-table__row {
+    td {
+      >a {
+        font-weight: bold;
+      }
+
+      .badge {
+        width: 100px;
+      }
+    }
+  }
+
+
+  .py-table__cell,
+  .py-table__cell-amount {
+    vertical-align: middle;
+
+    &:not(:last-child) {
+      word-wrap: break-word;
+      word-break: break-word;
+      overflow: hidden;
+    }
+  }
+
+  .invoice-bill-date {
+    min-width: 50px;
+    width: 125px;
+    white-space: nowrap;
+  }
+
+  .invoice-bill-number {
+    width: 450pxinvoice-bill-date;
+    
+  }
+
+  .invoice-bill-client {
+    width: 210px;
+  }
+
+  .invoice-bill-amount-due-paid {
+    min-width: 160px;
+  }
+
+  .invoice-bill-status {
+    min-width: 120px;
+    width: 65px;
+  }
+
+  .invoice-bill-actions {
+    width: 250px;
+    text-align: right;
+    position: relative;
+
+    .py-text--link {
+      margin-right: .5rem;
+    }
+  }
+}
+
+.bill-create__container {
+  .py-box {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .py-text--link {
+    svg {
+      fill: $primary;
+      margin-right: 4px;
+    }
+  }
+}

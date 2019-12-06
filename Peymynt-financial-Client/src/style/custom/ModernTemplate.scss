@@ -1,0 +1,347 @@
+.modern-template {
+    font-family: Helvetica, Arial, sans-serif;
+    .py-table__cell, .py-table__cell-amount, .py-text, .py-text--strong {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+  }
+
+  .modern-template__header__amount-due, .modern-template__header__label {
+    display: flex;
+    align-items: center;
+  }
+
+  .modern-template__header__amount-due__value, .modern-template__header__label__title {
+    font-size: 30px;
+    font-family: Helvetica Light, Arial, sans-serif;
+    font-weight: 300;
+  }
+
+  .modern-template {
+    font-size: 14px;
+    position: relative;
+    min-height: 1024px;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    background: #fff;
+    .py-text {
+      line-height: 16px;
+      margin: 0rem 0;
+    display: inline-block;
+    }
+    .py-table__cell, .py-table__cell-amount, .py-text, .py-text--strong {
+      font-size: 14px;
+    }
+  }
+
+  .modern-template__header {
+    display: flex;
+    height: 170px;
+  }
+
+  .modern-template__header__label {
+    padding-left: 30px;
+    width: 570px;
+  }
+
+  .modern-template__header__label__valign_wrapper {
+    width: 100%;
+  }
+
+  .modern-template__header__label__subtitle {
+    word-wrap: break-word;
+    padding-right: 10px;
+  }
+
+  .modern-template__header__amount-due {
+    text-align: center;
+    width: 320px;
+    justify-content: center;
+  }
+
+  .modern-template__metadata {
+    display: flex;
+    margin: 30px 30px 0;
+  }
+
+  .modern-template__metadata__address-header {
+    margin-bottom: 5px;
+    .py-text {
+      color: #8c959a;
+    }
+  }
+
+  .modern-template__metadata__customer {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .modern-template__metadata__customer__wrapper {
+    display: flex;
+  }
+
+  .modern-template__metadata__customer--billing {
+    flex-grow: 1;
+    padding-right: 10px;
+  }
+
+  .modern-template__metadata__customer--shipping {
+    flex-grow: 3;
+    padding-right: 10px;
+  }
+
+  .modern-template__metadata .invoice-template-details {
+    margin-top: -5px;
+    .py-table__row:hover {
+      background: none;
+    }
+    .py-table__cell {
+      padding-top: 0;
+      padding-bottom: 0;
+      &:first-child {
+        text-align: right;
+        width: 175px;
+      }
+      &:last-child {
+        padding-left: 0;
+        min-width: 130px;
+      }
+    }
+  }
+
+  .modern-template__items .py-table {
+    border-bottom: 3px solid #dee1e2;
+  }
+
+  .modern-template__items__column--center {
+    text-align: center;
+  }
+
+  .modern-template__items {
+    .py-table__header {
+      background-color: #fff;
+      .py-table__row {
+        border-width: 3px;
+      }
+    }
+    .py-table__cell {
+      font-size: 14px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 156px;
+      vertical-align: top;
+      white-space: pre-line;
+      word-break: break-word;
+    }
+    .py-table__cell-amount {
+      font-size: 14px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 156px;
+      vertical-align: top;
+      white-space: pre-line;
+      word-break: break-word;
+      &:last-child {
+        padding-right: 30px;
+      }
+    }
+    .py-table__cell {
+      &:last-child {
+        padding-right: 30px;
+      }
+      &:first-child {
+        padding-left: 30px;
+      }
+    }
+    .py-table__body {
+      .py-table__row {
+        border-bottom: none;
+        .no-items-message {
+          text-align: center;
+        }
+        &:nth-child(odd) {
+          background-color: #f4f5f5;
+        }
+        &:first-child:nth-last-child(2), &:nth-child(2):last-child {
+          background-color: #fff;
+        }
+      }
+      .py-table__cell--nested {
+        color: #4c5357;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .modern-template__divider--bold .py-divider {
+    border-width: 3px;
+    margin: 12px auto;
+  }
+
+  .modern-template__divider--small-margin .py-divider {
+    margin: 12px auto;
+  }
+
+  .modern-template__totals {
+    display: flex;
+    margin: 25px 0;
+  }
+
+  .modern-template__totals__blank {
+    flex-grow: 5;
+  }
+
+  .modern-template__totals__amounts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 30px;
+    .py-text--body {
+      line-height: 24px;
+    }
+  }
+
+  .modern-template__totals__amounts__line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .modern-template__totals__amounts__line__amount {
+    margin-left: 30px;
+    min-width: 125px;
+  }
+
+  .modern-template__memo {
+  margin: 0 30px 25px!important;
+    white-space: pre-line;
+    word-wrap: break-word;
+    .py-text--strong {
+      margin: 8px 0!important;
+      display: block!important;
+    }
+    .py-text{
+      display: block!important;
+    }
+  }
+
+  .modern-template__memo{
+
+  }
+
+  .modern-template__sticky-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .modern-template__footer {
+    text-align: center;
+    line-height: 16px;
+    margin: 0 10px;
+    white-space: pre-wrap;
+  }
+
+  .modern-template__business-info {
+    display: flex;
+    padding: 0 33px 24px!important;
+  }
+
+  .modern-template__business-info__logo {
+    flex-grow: 1;
+    img {
+      max-width: 200px;
+      max-height: 80px;
+    }
+  }
+
+  .modern-template__business-info__address {
+    flex-grow: 1;
+  }
+
+  .modern-template__business-info__contact {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+
+  .modern-template__items .py-table__body .py-table__row:nth-child(odd) {
+    background-color: #f4f5f5;
+  }
+
+  .modern-template {
+    .text-strong {
+      font-size: 14px;
+      font-family: Helvetica,Arial,sans-serif;
+    }
+    .color-muted {
+      color: #8c959a;
+  }
+
+
+  .template-metadata-customer-billing,
+  .template-metadata-customer-shipping{
+      line-height: 16px;
+
+      .py-text--block-label {
+        text-transform: uppercase;
+        color: #4d6575;
+        margin-bottom: 5px;
+      }
+  }
+
+  .template-metadat-customer-address-header{
+    margin-bottom: 5px;
+  }
+
+  .template-metadata-customer-address{
+      line-height: 16px;
+  }
+  table.table.py-table--plain td {
+    padding: 0px 7px;
+    line-height: 18px;
+  }
+
+  .modern-template__sticky-bottom .py-divider {
+    margin: 25px 0 !important;
+  }
+  .modern-template__business-info__address {
+    line-height: 16px;
+  }
+  .address {
+    line-height: 16px;
+  }
+
+  .py-invoice-template__row-amount{
+    span{
+      min-width: 125px;
+      display: inline-block;
+    }
+  }
+  .py-invoice-template__row-amount {
+    margin-left: 1rem!important;
+    min-width: auto!important;;
+    max-width: 100%!important;;
+    overflow: visible!important;;
+    text-align: right!important;;
+  }
+
+
+  .wv-divider, .wv-divider--whitespace {
+    border-color: #d4dde3;
+  }
+
+  .py-divider-thick {
+    background: #d4dde3;
+  }
+}
+
+
+.modern-template__items{
+  table{
+    td{
+      padding-top: 8px;
+      padding-bottom: 8px;;
+    }
+  }
+}

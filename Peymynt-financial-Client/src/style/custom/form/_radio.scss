@@ -1,0 +1,28 @@
+.py-radio {
+  cursor: pointer;
+
+  .py-form__element__faux {
+    border-radius: 50rem;
+  }
+
+
+  [type="radio"] {
+    &:checked~.py-form__element__faux {
+      background: $primary;
+
+      &:after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: $white;
+        border-radius: 50rem;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+  }
+
+}

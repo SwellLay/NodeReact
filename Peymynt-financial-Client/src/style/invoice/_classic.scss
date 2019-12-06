@@ -1,0 +1,349 @@
+
+
+/**
+Classic template css
+*/
+
+.classic-template {
+    font-size: 14px;
+    position: relative;
+    min-height: 1024px;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    background: #fff;
+}
+
+.classic-template__header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem 1rem 0;
+}
+
+.classic-template__header__logo {
+    flex-grow: 1;
+}
+
+.classic-template__header__info {
+    flex-grow: 1;
+    text-align: right;
+    max-width: 460px;
+}
+
+.classic-template__separator {
+    margin: 1.5rem 1rem 0;
+}
+
+
+.classic-template__separator__header {
+    display: flex;
+    align-items: center;
+}
+
+.classic-template__separator__header hr {
+    border-width: 2px 0;
+    border-style: solid;
+    padding: 2px 0;
+    flex-grow: 2;
+    margin: 40px 0;
+}
+
+.classic-template__separator__header__frame {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+
+.classic-template__separator__header__frame__text {
+    border-width: 0 0;
+    border-style: solid;
+    height: 56px;
+    line-height: 64px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.classic-template__separator__header__frame__text:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 8px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: inherit;
+}
+
+.classic-template__separator__header__frame__text:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 8px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: inherit;
+}
+
+.classic-template__separator__subheader {
+    text-align: center;
+
+    .py-heading--subtitle {
+        font-size: 14px;
+        text-align: center !important;
+    }
+}
+
+.classic-template__metadata {
+    margin: 1.5rem 1rem;
+    display: flex;
+}
+
+.classic-template__metadata__customer {
+    flex-grow: 1;
+    display: flex;
+}
+
+.classic-template__metadata__customer__wrapper {
+    display: flex;
+}
+
+.classic-template__metadata__customer--billing {
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.classic-template__metadata .invoice-template-details {
+    margin-top: -5px;
+}
+
+.classic-template__metadata .invoice-template-details table tr:last-child {
+    background: #f4f5f5;
+}
+.classic-template__metadata .invoice-template-details table tr:last-child td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.classic-template__items {
+    margin: 1rem 1rem 0;
+    padding: 0 0;
+
+    .invoice-product-description {
+        margin-bottom: 0;
+    }
+}
+
+.classic-template__items .py-table__header {
+    background-color: #fff;
+    border: none;
+}
+
+.classic-template__items .py-table__header .py-table__row {
+    border: none;
+}
+
+.classic-template__items .py-table__header .py-table__cell,
+.classic-template__items .py-table__header .py-table__cell-amount {
+    text-transform: none;
+    // font-weight: 600;
+    color: #4c5357;
+    padding-bottom: 20px;
+    white-space: pre-line;
+}
+
+.classic-template__items .py-table__body {
+    border-top: 1px dotted #000;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 10px;
+}
+
+/* .classic-template__items .py-table__body .py-table__row {
+    border-bottom: 1px dotted #000;
+} */
+.classic-template__items .py-table__cell:first-child {
+    padding-left: 0;
+}
+
+.classic-template__items .py-table__cell-amount:last-child {
+    padding-right: 0;
+    text-align: right;
+}
+
+
+.classic-template {
+    .py-invoice-template__totals {
+        margin: 1rem;
+    }
+
+    .py-invoice-template__totals-amounts {
+        margin: 0;
+    }
+
+}
+
+.classic-template__totals__blank {
+    flex-grow: 5;
+}
+
+.classic-template__totals__amounts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+}
+
+.classic-template__totals__amounts__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// .classic-template__totals__amounts__line__amount {
+//     min-width: 125px;
+// }
+
+.classic-template__hr-double {
+    border: none;
+    border-top: medium double #dee1e2;
+    width: 100%;
+    margin: 12px 0;
+}
+
+
+.classic-template__metadata .invoice-template-details .py-table__cell {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.classic-template {
+    font-size: 14px;
+    position: relative;
+    padding: 16px;
+    min-height: 1024px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.classic-template__footer {
+    margin: 0 1.5rem 1.5rem;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    color: #9e9e9e;
+}
+
+.classic-template .invoice-template-details table tr td {
+    border: none;
+    padding: 0;
+}
+
+.classic-template .invoice-template-details table tr td:first-child {
+    padding-right: 13px;
+    min-width: 160px;
+    text-align: right;
+    border-radius: 40px 0 0 40px;
+}
+
+.classic-template .invoice-template-details table tr td:last-child {
+    border-radius: 0 40px 40px 0;
+}
+
+.classic-template__metadata__customer {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    padding-top: 4px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.classic-template__metadata__customer--shipping {
+    flex-grow: 3;
+}
+
+
+
+.classic-template__items table tr th:nth-child(3),
+.classic-template__items table tr th:nth-child(4),
+.classic-template__items table tr td:nth-child(3),
+.classic-template__items table tr td:nth-child(4) {
+    text-align: right;
+}
+
+
+
+.classic-template__totals .contemporary-template__totals-amounts-line .py-invoice-template__row-label {
+    text-align: right;
+    width: 100%;
+}
+
+.py-invoice-template__row-label {
+    text-align: right;
+    width: 100%;
+}
+
+.classic-template__totals__amounts__line__label {
+    text-align: right;
+    width: 100%;
+}
+
+.classic-template__totals .contemporary-template__totals-amounts-line .classic-template__totals__amounts__line__label {
+    text-align: right;
+    width: 100%;
+}
+
+.classic-template .py-table .text-strong {
+    font-weight: 800;
+}
+
+
+.classic-template__items.mrT25 {
+    margin-top: 16px !important;
+}
+
+.invoice-preview__body .classic-template .py-table__header .py-table__row th:nth-child(1),
+.invoice-preview__body .classic-template .py-table__body .py-table__row td:nth-child(1) {
+    padding-left: 0;
+}
+
+.invoice-preview__body .classic-template .py-table__header .py-table__row th:nth-child(4),
+.invoice-preview__body .classic-template .py-table__body .py-table__row td:nth-child(4) {
+    padding-right: 0;
+}
+
+.classic-template .py-invoice-template__memo {
+    margin: 0 1rem 2rem;
+}
+
+.classic-template__totals .py-invoice-template__row-amount {
+    min-width: 125px;
+}
+
+
+// Alex
+
+.classic-template__totals__amounts__line__amount {
+    margin-left: 1rem;
+    min-width: 125px;
+}
+
+
+
+.classic-template__separator__header__right_divider {
+    height: 8px;
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    flex: 1;
+    width: 100%;
+    background: transparent;
+}

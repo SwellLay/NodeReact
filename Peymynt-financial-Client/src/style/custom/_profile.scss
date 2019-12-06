@@ -1,0 +1,62 @@
+
+
+.closeUser-wrp {
+    padding-top: 50px;
+
+    .content {
+        text-align: center;
+    }
+
+    .py-logo {
+        width: 250px;
+        height: 50px;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        text-indent: 20%;
+        background: url(http://localhost:8000/assets/images/logo.png) left top no-repeat;
+        background-size: auto 100%;
+        user-select: text !important;
+        font-size: 25px;
+        line-height: 2;
+        font-weight: 800;
+    }
+
+    .peyTitle {
+        font-size: 33px;
+        line-height: 40px;
+        font-weight: $font-weight-bold;
+        margin-top: 30px;
+    }
+
+    .ta-l {
+        text-align: left;
+    }
+
+    .content-wrp {
+        margin-top: 20px;
+        padding: 50px;
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+// start:: Alex 
+// .py-frame__settings {
+
+    .py-page__inner {
+        max-width: 748px;
+        @include make-container();
+        padding:2rem 1.5rem;
+    }
+
+    .col-form-label {
+        padding: 0;
+        padding: .75rem .9rem .75rem 0;
+    }
+// }
+
+// end:: Alex 

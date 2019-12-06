@@ -1,0 +1,154 @@
+// Name : Onboarding
+//  Uses : Across all kinds of onboarding screens
+// 
+
+// Inital onboard after sign up
+.onboarding__initial {
+  .form-group {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .py-form-field__label {
+    margin-bottom: 4px;
+  }
+
+}
+
+// payment onboarding
+.payment__onboarding__container {
+  box-shadow: 0 0 20px rgba($black, .1);
+  padding: 3rem 2rem;
+  .error{
+    color: $danger;
+    font-size: 13px;
+  }
+
+  .py-form-field__label {
+    display: block;
+  }
+
+  .form-group {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.Payment__Onboarding__Stepper__Container {
+  position: fixed;
+}
+
+.Payment__Onboarding__Stepper__Content {
+  margin-left: auto !important;
+}
+
+.payment__onboarding__content {
+  max-width: 80%;
+  margin: 0 auto;
+
+  .py-brand--type {
+    >span {
+      font-family: $base-font-family !important;
+      font-size: 1rem !important;
+    }
+  }
+}
+
+.payment__onboarding__step__label {
+  font-family: $base-font-family;
+  font-size: 1rem;
+}
+
+.payment__onboarding__step__icon {
+  // border: 1px solid $primary;
+  // color: 1px solid $primary;
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 1rem !important;
+  fill: currentColor !important;
+  color: rgba($black, .2) !important;
+
+  &.is-active {
+    // border: 2px solid $primary;
+    color: $primary !important;
+    border-radius: 50rem;
+
+    .payment__onboarding__step__icon-text {
+      fill: $white !important;
+    }
+  }
+}
+
+.payment__onboarding__step__icon-text {
+  font-size: 14px !important;
+  font-family: $base-font-family !important;
+  fill: $black !important;
+}
+
+.payment__onboard__step__line {
+  border-color: rgba($black, .1) !important;
+  margin-bottom: -8px;
+}
+
+.payment__onboard__business__type__list {
+  >div {
+    cursor: pointer;
+    border: 2px solid rgba($black, .2);
+    box-shadow: none !important;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
+
+.onboarding__business__details {
+  .py-form-field__label {
+    display: block;
+  }
+}
+
+// Invoice onboarding
+.invoice__onboarding__content__body {
+  display: flex;
+
+  .invoice__onboarding__content__left {
+    text-align: center;
+    flex: 1;
+  }
+
+  .invoice__onboarding__content__right {
+    text-align: center;
+  }
+
+  .carousel {
+    max-width: 495px !important;
+
+    .carousel-item {
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+  }
+
+  .invoice__onboarding__logo__upload__handle {
+    width: 302px;
+    min-height: 274px;
+  }
+
+  .invoice__onboarding__content__color__handle {
+    width: 302px;
+  }
+}
+
+.invoice__onboarding__content__footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}

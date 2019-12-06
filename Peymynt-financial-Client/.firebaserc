@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "peymynt-financia-1546589526060"
+  },
+  "targets": {
+    "peymynt-financia-1546589526060": {
+      "hosting": {
+        "dev": [
+          "dev-peymynt"
+        ],
+        "pre": [
+          "peymynt-pre"
+        ]
+      }
+    }
+  }
+}

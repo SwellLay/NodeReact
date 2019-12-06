@@ -1,0 +1,16 @@
+# Github Node Default
+
+node_modules/
+# System Files
+.DS_Store
+Thumbs.db
+src/
+.env
+.env.local
+.env.dev
+.env.prod
+ecosystem.config.js
+.vscode/*
+tmp/
+**/*.test.html
+**/*.test.pdf

@@ -1,0 +1,354 @@
+.dashboard-wrapper {
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .btn {
+    font-weight: normal;
+  }
+
+  .dropdown-item {
+    a {
+      color: #1c252c;
+      font-weight: normal;
+    }
+  }
+}
+
+.activity-wrapper {
+  max-width: 340px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.financial-wrapper {
+  min-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: -30px;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.widget-wrapper {
+  margin: 24px auto;
+
+  & + .widget-wrapper {
+    margin-top: 48px;
+  }
+
+  .title-container {
+    margin-bottom: 8px;
+  }
+
+  .content-container {
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #b2c2cd;
+    background-color: #fff;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .tables-container {
+    table {
+      width: 100%;
+    }
+
+    tbody {
+      tr:hover {
+        background: #F6F8F9;
+      }
+    }
+
+    th {
+      padding: 20px 8px 8px;
+      font-weight: bold;
+      vertical-align: bottom;
+      border-bottom: 2px solid #b2c2cd;
+
+      &:nth-child(n+2) {
+        text-align: right;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+      }
+    }
+
+    td {
+      padding: 8px;
+      font-weight: normal;
+      font-size: 16px;
+      border-bottom: 1px solid #d4dde3;
+
+      &:nth-child(n+2) {
+        text-align: right;
+      }
+    }
+  }
+
+  .or-separator-container {
+    margin: 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    hr {
+      border-top: 1px solid #d4dde3;
+      width: 43px;
+      margin: 0;
+    }
+
+    .text {
+      margin: 0 1em;
+      line-height: 1;
+    }
+  }
+
+  .see-all-container {
+    text-align: center;
+  }
+
+  .highcharts-container {
+    margin: auto;
+  }
+
+  .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .info {
+      font-weight: normal;
+    }
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .chart-container {
+    position: relative;
+  }
+
+  .options-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 11;
+
+    .option {
+      color: $gray-400;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1.4;
+
+      & + .option {
+        margin-left: 0.5em;
+      }
+
+      &:hover,
+      &.active {
+        color: #985bef;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .no-data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 340px;
+
+    .image-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      opacity: 0.4;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .placeholder-container {
+      position: relative;
+      font-size: 13px;
+      border-radius: 5px;
+      color: #999;
+      z-index: 99;
+      background: #F4F2D4;
+      padding: 10px;
+      width: 250px;
+
+      span {
+        display: block;
+      }
+
+      .heading {
+        color: #000;
+        margin: 0;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.widget--title {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1c252c;
+  margin: 0;
+}
+
+.bank-container {
+  margin-bottom: 20px;
+
+  .bank--name {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444;
+    margin: 0;
+    text-rendering: optimizelegibility;
+  }
+
+  .last-updated-container {
+    color: #4d6575;
+    font-size: 13px;
+    line-height: 1.5em;
+    min-height: 20px;
+    margin-bottom: 10px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+
+    a {
+      padding: 0;
+      font-weight: 500;
+      border: none;
+      margin: 0;
+      color: inherit;
+      font-size: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  .account-container {
+    position: relative;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #D0F4FC;
+    margin-bottom: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .account--name,
+  .account--balance {
+    width: 48.9%;
+    flex-shrink: 0;
+    line-height: 20px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .account--balance {
+    color: #777;
+    text-align: right;
+  }
+}
+
+.bank-widget {
+  .add-bank-account-container {
+    margin: 5px auto;
+    text-align: center;
+
+    .btn {
+      font-weight: normal;
+    }
+  }
+
+  .statement-link-container {
+    text-align: center;
+    margin: 16px 0;
+  }
+
+  .manage-accounts-container {
+    padding-top: 10px;
+    text-align: center;
+
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+.things-to-do-widget {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 10px 0;
+    line-height: 20px;
+    font-weight: bold;
+  }
+}
+
+.payable-owing-widget {
+  .tables-container {
+    display: flex;
+    justify-content: space-between;
+
+    table {
+      width: 49%;
+    }
+  }
+}
+
+.overdue-widget {
+  ul {
+    list-style: disc;
+    margin: 16px 0 16px 1.6em;
+    padding: 0;
+  }
+
+  .list-title {
+    color: #4d6575;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: normal;
+  }
+
+  hr {
+    border-top: 1px solid #d4dde3;
+    overflow: hidden;
+    margin: 24px auto;
+  }
+}

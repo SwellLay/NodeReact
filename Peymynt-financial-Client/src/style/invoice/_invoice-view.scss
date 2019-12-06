@@ -1,0 +1,62 @@
+// Invoice view with card 
+
+.invoice-step-card__header {
+  display: flex;
+  flex: 1;
+
+  .py-heading--subtitle {
+    margin: 0;
+    flex: 1;
+  }
+
+  .invoice-step-card__actions {
+    .btn {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+}
+
+.invoice-view__body__vertical-line {
+  margin: -15px 0 0 39px;
+  border: 2px solid $border-color;
+  height: 18px;
+  width: 0;
+}
+
+.invoice-view-billing__details  {
+  p {
+    line-height: 1.4;
+  }
+}
+
+
+.steps-notifier {
+  display: block !important;
+  width: 100% !important;
+
+
+  &.status-draft {
+    @extend .alert-info;
+  }
+}
+
+.invoice-view-payment-section__content__payment-details__description {
+  margin-bottom: 12px;
+}
+
+.invoice-create-info {
+  // display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.hover-rotate {
+  cursor: pointer;
+  &:hover,
+  &:focus{
+    transform: rotate(45deg);
+  }
+}

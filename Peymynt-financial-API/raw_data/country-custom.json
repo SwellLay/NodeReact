@@ -1,0 +1,152 @@
+[
+    {
+      "id": 13,
+      "sortname": "AU",
+      "name": "Australia",
+      "phoneCode": 61
+    },
+    {
+      "id": 14,
+      "sortname": "AT",
+      "name": "Austria",
+      "phoneCode": 43
+    },
+    {
+      "id": 21,
+      "sortname": "BE",
+      "name": "Belgium",
+      "phoneCode": 32
+    },
+    {
+      "id": 30,
+      "sortname": "BR",
+      "name": "Brazil",
+      "phoneCode": 55
+    },
+    {
+      "id": 38,
+      "sortname": "CA",
+      "name": "Canada",
+      "phoneCode": 1
+    },
+    {
+      "id": 58,
+      "sortname": "DK",
+      "name": "Denmark",
+      "phoneCode": 45
+    },
+    {
+      "id": 74,
+      "sortname": "FI",
+      "name": "Finland",
+      "phoneCode": 358
+    },
+    {
+      "id": 75,
+      "sortname": "FR",
+      "name": "France",
+      "phoneCode": 33
+    },
+    {
+      "id": 82,
+      "sortname": "DE",
+      "name": "Germany",
+      "phoneCode": 49
+    },
+    {
+      "id": 98,
+      "sortname": "HK",
+      "name": "Hong Kong",
+      "phoneCode": 852
+    },
+    {
+      "id": 101,
+      "sortname": "IN",
+      "name": "India",
+      "phoneCode": 91
+    },
+    {
+      "id": 105,
+      "sortname": "IE",
+      "name": "Ireland",
+      "phoneCode": 353
+    },
+    {
+      "id": 107,
+      "sortname": "IT",
+      "name": "Italy",
+      "phoneCode": 39
+    },
+    {
+      "id": 109,
+      "sortname": "JP",
+      "name": "Japan",
+      "phoneCode": 81
+    },
+    {
+      "id": 127,
+      "sortname": "LU",
+      "name": "Luxembourg",
+      "phoneCode": 352
+    },
+    {
+      "id": 142,
+      "sortname": "MX",
+      "name": "Mexico",
+      "phoneCode": 52
+    },
+    {
+      "id": 155,
+      "sortname": "NL",
+      "name": "Netherlands",
+      "phoneCode": 31
+    },
+    {
+      "id": 157,
+      "sortname": "NZ",
+      "name": "New Zealand",
+      "phoneCode": 64
+    },
+    {
+      "id": 164,
+      "sortname": "NO",
+      "name": "Norway",
+      "phoneCode": 47
+    },
+    {
+      "id": 176,
+      "sortname": "PT",
+      "name": "Portugal",
+      "phoneCode": 351
+    },
+    {
+      "id": 205,
+      "sortname": "ES",
+      "name": "Spain",
+      "phoneCode": 34
+    },
+    {
+      "id": 211,
+      "sortname": "SE",
+      "name": "Sweden",
+      "phoneCode": 46
+    },
+    {
+      "id": 212,
+      "sortname": "CH",
+      "name": "Switzerland",
+      "phoneCode": 41
+    },
+    {
+      "id": 230,
+      "sortname": "GB",
+      "name": "United Kingdom",
+      "phoneCode": 44
+    },
+    {
+      "id": 231,
+      "sortname": "US",
+      "name": "United States",
+      "phoneCode": 1
+    }
+  ]

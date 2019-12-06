@@ -1,0 +1,80 @@
+// Headings and display texts
+// Created by: Alex
+
+
+.py-header--title {
+    flex-grow: 1;
+
+    [class*="py-heading"] {
+        margin: 0;
+    }
+}
+
+.py-heading--title {
+    font-weight: $font-weight-bold;
+    line-height: 40px;
+    font-size: 26px;
+    margin: 32px 0 16px;
+    display: block;
+
+    @include media-breakpoint-up(md) {
+        font-size: 33px;
+    }
+
+    +.py-heading--subtitle {
+        margin-top: 0;
+    }
+
+}
+
+.py-header--actions {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.py-heading--section-title {
+    font-weight: $font-weight-bold;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.py-heading--section-title,
+.py-heading--subtitle {
+    font-size: 1.5rem;
+    margin: 32px 0 16px;
+}
+
+
+.py-heading--subtitle {
+    color: rgba($black, .6);
+    font-weight: normal;
+}
+
+.py-heading--subsection-title,
+.py-form-legend {
+    font-size: 19px;
+}
+
+.py-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.py-header--page {
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 1.5rem;
+
+    .py-heading--title,
+    .py-heading--section-title {
+        margin: 0;
+    }
+}
+
+.py-text--nowrap {
+    white-space: nowrap;
+}
